@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Issuer</key>
+	<string>https://{your-business}.kinde.com</string>
+	<key>ClientId</key>
+	<string>{your-client-id}</string>
+	<key>RedirectUri</key>
+	<string>{your-url-scheme}://kinde_callback</string>
+	<key>PostLogoutRedirectUri</key>
+	<string>{your-url-scheme}://kinde_logoutcallback</string>
+	<key>Scope</key>
+	<string>offline openid</string>
+</dict>
+</plist>

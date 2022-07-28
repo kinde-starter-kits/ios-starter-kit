@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05203D0D288FCB7F0019F003 /* kinde-auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 05203D0B288FCB7F0019F003 /* kinde-auth.json */; };
+		05203D0E288FCB7F0019F003 /* KindeAuth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05203D0C288FCB7F0019F003 /* KindeAuth.plist */; };
+		05203D11288FCB980019F003 /* kinde-auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 05203D0F288FCB980019F003 /* kinde-auth.json */; };
+		05203D12288FCB980019F003 /* KindeAuth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05203D10288FCB980019F003 /* KindeAuth.plist */; };
+		05203D16288FDFD40019F003 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05203D15288FDFD40019F003 /* LoggedInViewController.swift */; };
+		052A3F7028913E2F0048A9DB /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB552876DE3100D37B1E /* StringExtensions.swift */; };
+		05AAAB4C2876BDBE00D37B1E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB432876BDBD00D37B1E /* Logger.swift */; };
+		05AAAB4D2876BDBE00D37B1E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB452876BDBE00D37B1E /* AppView.swift */; };
+		05AAAB4E2876BDBE00D37B1E /* LoggedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB462876BDBE00D37B1E /* LoggedOutView.swift */; };
+		05AAAB4F2876BDBE00D37B1E /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB472876BDBE00D37B1E /* LoggedInView.swift */; };
+		05AAAB542876CD1600D37B1E /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB532876CD1600D37B1E /* FooterView.swift */; };
+		05AAAB562876DE3100D37B1E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB552876DE3100D37B1E /* StringExtensions.swift */; };
+		05CA7FD8288A3ED0008FFDD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA7FD7288A3ED0008FFDD1 /* AppDelegate.swift */; };
+		05CA7FDA288A3ED0008FFDD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA7FD9288A3ED0008FFDD1 /* SceneDelegate.swift */; };
+		05CA7FDC288A3ED0008FFDD1 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA7FDB288A3ED0008FFDD1 /* LoggedOutViewController.swift */; };
+		05CA7FDF288A3ED0008FFDD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CA7FDD288A3ED0008FFDD1 /* Main.storyboard */; };
+		05CA7FE1288A3ED3008FFDD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CA7FE0288A3ED3008FFDD1 /* Assets.xcassets */; };
+		05CA7FE4288A3ED3008FFDD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CA7FE2288A3ED3008FFDD1 /* LaunchScreen.storyboard */; };
+		05CA7FE9288A868F008FFDD1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB432876BDBD00D37B1E /* Logger.swift */; };
+		05D239FF286553160086FCBE /* KindeAuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D239FE286553160086FCBE /* KindeAuthApp.swift */; };
+		05D23A032865531A0086FCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D23A022865531A0086FCBE /* Assets.xcassets */; };
+		05D23A062865531A0086FCBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D23A052865531A0086FCBE /* Preview Assets.xcassets */; };
+		05D23A102865531A0086FCBE /* KindeAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D23A0F2865531A0086FCBE /* KindeAuthTests.swift */; };
+		05D23A1A2865531A0086FCBE /* KindeAuthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D23A192865531A0086FCBE /* KindeAuthUITests.swift */; };
+		05D23A1C2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D23A1B2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift */; };
+		0DB6C017989EB18FD80A323C /* Pods_KindeAuthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281B80B79A1C7FC86C6B4A40 /* Pods_KindeAuthTests.framework */; };
+		24BD9608A02B6DA73EDBC3E5 /* Pods_KindeAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4512C06716A09E595E238C /* Pods_KindeAuth.framework */; };
+		673D7A90DCB883343C3DF00F /* Pods_KindeAuth_KindeAuthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389DB511EEB3E4AB88CE5AD6 /* Pods_KindeAuth_KindeAuthUITests.framework */; };
+		F3C74695D1FAC0A81721B01D /* Pods_KindeAuthUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43A47FC5F623709FCD0C7EE /* Pods_KindeAuthUIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05D23A0C2865531A0086FCBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05D239F3286553160086FCBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D239FA286553160086FCBE;
+			remoteInfo = KindeAuth;
+		};
+		05D23A162865531A0086FCBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05D239F3286553160086FCBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D239FA286553160086FCBE;
+			remoteInfo = KindeAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03E29C22498FC055FD4E8EF2 /* Pods-KindeAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuth.release.xcconfig"; path = "Target Support Files/Pods-KindeAuth/Pods-KindeAuth.release.xcconfig"; sourceTree = "<group>"; };
+		05203D0B288FCB7F0019F003 /* kinde-auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kinde-auth.json"; sourceTree = "<group>"; };
+		05203D0C288FCB7F0019F003 /* KindeAuth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KindeAuth.plist; sourceTree = "<group>"; };
+		05203D0F288FCB980019F003 /* kinde-auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kinde-auth.json"; sourceTree = "<group>"; };
+		05203D10288FCB980019F003 /* KindeAuth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KindeAuth.plist; sourceTree = "<group>"; };
+		05203D15288FDFD40019F003 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		05AAAB432876BDBD00D37B1E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		05AAAB452876BDBE00D37B1E /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		05AAAB462876BDBE00D37B1E /* LoggedOutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
+		05AAAB472876BDBE00D37B1E /* LoggedInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
+		05AAAB532876CD1600D37B1E /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		05AAAB552876DE3100D37B1E /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		05CA7FD5288A3ED0008FFDD1 /* KindeAuthUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindeAuthUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CA7FD7288A3ED0008FFDD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05CA7FD9288A3ED0008FFDD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		05CA7FDB288A3ED0008FFDD1 /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		05CA7FDE288A3ED0008FFDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05CA7FE0288A3ED3008FFDD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05CA7FE3288A3ED3008FFDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05CA7FE5288A3ED3008FFDD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D239FB286553160086FCBE /* KindeAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindeAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D239FE286553160086FCBE /* KindeAuthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindeAuthApp.swift; sourceTree = "<group>"; };
+		05D23A022865531A0086FCBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05D23A052865531A0086FCBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05D23A0B2865531A0086FCBE /* KindeAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindeAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D23A0F2865531A0086FCBE /* KindeAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindeAuthTests.swift; sourceTree = "<group>"; };
+		05D23A152865531A0086FCBE /* KindeAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindeAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D23A192865531A0086FCBE /* KindeAuthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindeAuthUITests.swift; sourceTree = "<group>"; };
+		05D23A1B2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindeAuthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		281B80B79A1C7FC86C6B4A40 /* Pods_KindeAuthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindeAuthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C02DB0AE09B112E08336057 /* Pods-KindeAuthUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuthUIKit.debug.xcconfig"; path = "Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		2DFDEF290BE907AC6E5B7FD6 /* Pods-KindeAuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuthTests.debug.xcconfig"; path = "Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests.debug.xcconfig"; sourceTree = "<group>"; };
+		389DB511EEB3E4AB88CE5AD6 /* Pods_KindeAuth_KindeAuthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindeAuth_KindeAuthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4169A72877D9D391F4A5F877 /* Pods-KindeAuthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuthTests.release.xcconfig"; path = "Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6962E820161E64266500485 /* Pods-KindeAuthUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuthUIKit.release.xcconfig"; path = "Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		C43A47FC5F623709FCD0C7EE /* Pods_KindeAuthUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindeAuthUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E129488A263612A21A3A0028 /* Pods-KindeAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuth.debug.xcconfig"; path = "Target Support Files/Pods-KindeAuth/Pods-KindeAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		F18A61F1E9512982AE806707 /* Pods-KindeAuth-KindeAuthUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuth-KindeAuthUITests.debug.xcconfig"; path = "Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7A0D4F50608205D7F6269F8 /* Pods-KindeAuth-KindeAuthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuth-KindeAuthUITests.release.xcconfig"; path = "Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF4512C06716A09E595E238C /* Pods_KindeAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindeAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05CA7FD2288A3ED0008FFDD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C74695D1FAC0A81721B01D /* Pods_KindeAuthUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D239F8286553160086FCBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BD9608A02B6DA73EDBC3E5 /* Pods_KindeAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D23A082865531A0086FCBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB6C017989EB18FD80A323C /* Pods_KindeAuthTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D23A122865531A0086FCBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673D7A90DCB883343C3DF00F /* Pods_KindeAuth_KindeAuthUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05AAAB422876BDBD00D37B1E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				05AAAB432876BDBD00D37B1E /* Logger.swift */,
+				05AAAB552876DE3100D37B1E /* StringExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		05AAAB442876BDBE00D37B1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05AAAB452876BDBE00D37B1E /* AppView.swift */,
+				05AAAB462876BDBE00D37B1E /* LoggedOutView.swift */,
+				05AAAB472876BDBE00D37B1E /* LoggedInView.swift */,
+				05AAAB532876CD1600D37B1E /* FooterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05CA7FD6288A3ED0008FFDD1 /* KindeAuthUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				05203D0F288FCB980019F003 /* kinde-auth.json */,
+				05203D10288FCB980019F003 /* KindeAuth.plist */,
+				05CA7FD7288A3ED0008FFDD1 /* AppDelegate.swift */,
+				05CA7FD9288A3ED0008FFDD1 /* SceneDelegate.swift */,
+				05CA7FDB288A3ED0008FFDD1 /* LoggedOutViewController.swift */,
+				05203D15288FDFD40019F003 /* LoggedInViewController.swift */,
+				05CA7FDD288A3ED0008FFDD1 /* Main.storyboard */,
+				05CA7FE0288A3ED3008FFDD1 /* Assets.xcassets */,
+				05CA7FE2288A3ED3008FFDD1 /* LaunchScreen.storyboard */,
+				05CA7FE5288A3ED3008FFDD1 /* Info.plist */,
+			);
+			path = KindeAuthUIKit;
+			sourceTree = "<group>";
+		};
+		05D239F2286553160086FCBE = {
+			isa = PBXGroup;
+			children = (
+				05D239FD286553160086FCBE /* KindeAuth */,
+				05D23A0E2865531A0086FCBE /* KindeAuthTests */,
+				05D23A182865531A0086FCBE /* KindeAuthUITests */,
+				05CA7FD6288A3ED0008FFDD1 /* KindeAuthUIKit */,
+				05D239FC286553160086FCBE /* Products */,
+				21F872B49293BD7A07DB85DA /* Pods */,
+				F93722C10832F6735056A2F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05D239FC286553160086FCBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05D239FB286553160086FCBE /* KindeAuth.app */,
+				05D23A0B2865531A0086FCBE /* KindeAuthTests.xctest */,
+				05D23A152865531A0086FCBE /* KindeAuthUITests.xctest */,
+				05CA7FD5288A3ED0008FFDD1 /* KindeAuthUIKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05D239FD286553160086FCBE /* KindeAuth */ = {
+			isa = PBXGroup;
+			children = (
+				05203D0B288FCB7F0019F003 /* kinde-auth.json */,
+				05203D0C288FCB7F0019F003 /* KindeAuth.plist */,
+				05AAAB422876BDBD00D37B1E /* Utilities */,
+				05AAAB442876BDBE00D37B1E /* Views */,
+				05D239FE286553160086FCBE /* KindeAuthApp.swift */,
+				05D23A022865531A0086FCBE /* Assets.xcassets */,
+				05D23A042865531A0086FCBE /* Preview Content */,
+			);
+			path = KindeAuth;
+			sourceTree = "<group>";
+		};
+		05D23A042865531A0086FCBE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				05D23A052865531A0086FCBE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05D23A0E2865531A0086FCBE /* KindeAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				05D23A0F2865531A0086FCBE /* KindeAuthTests.swift */,
+			);
+			path = KindeAuthTests;
+			sourceTree = "<group>";
+		};
+		05D23A182865531A0086FCBE /* KindeAuthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05D23A192865531A0086FCBE /* KindeAuthUITests.swift */,
+				05D23A1B2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift */,
+			);
+			path = KindeAuthUITests;
+			sourceTree = "<group>";
+		};
+		21F872B49293BD7A07DB85DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E129488A263612A21A3A0028 /* Pods-KindeAuth.debug.xcconfig */,
+				03E29C22498FC055FD4E8EF2 /* Pods-KindeAuth.release.xcconfig */,
+				F18A61F1E9512982AE806707 /* Pods-KindeAuth-KindeAuthUITests.debug.xcconfig */,
+				F7A0D4F50608205D7F6269F8 /* Pods-KindeAuth-KindeAuthUITests.release.xcconfig */,
+				2DFDEF290BE907AC6E5B7FD6 /* Pods-KindeAuthTests.debug.xcconfig */,
+				4169A72877D9D391F4A5F877 /* Pods-KindeAuthTests.release.xcconfig */,
+				2C02DB0AE09B112E08336057 /* Pods-KindeAuthUIKit.debug.xcconfig */,
+				A6962E820161E64266500485 /* Pods-KindeAuthUIKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F93722C10832F6735056A2F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF4512C06716A09E595E238C /* Pods_KindeAuth.framework */,
+				389DB511EEB3E4AB88CE5AD6 /* Pods_KindeAuth_KindeAuthUITests.framework */,
+				281B80B79A1C7FC86C6B4A40 /* Pods_KindeAuthTests.framework */,
+				C43A47FC5F623709FCD0C7EE /* Pods_KindeAuthUIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05CA7FD4288A3ED0008FFDD1 /* KindeAuthUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05CA7FE8288A3ED3008FFDD1 /* Build configuration list for PBXNativeTarget "KindeAuthUIKit" */;
+			buildPhases = (
+				AC53B9FACA02ED713C16CACE /* [CP] Check Pods Manifest.lock */,
+				05CA7FD1288A3ED0008FFDD1 /* Sources */,
+				05CA7FD2288A3ED0008FFDD1 /* Frameworks */,
+				05CA7FD3288A3ED0008FFDD1 /* Resources */,
+				BFF34D6F640E3B6CBFD71AEA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KindeAuthUIKit;
+			productName = KindeAuthUIKit;
+			productReference = 05CA7FD5288A3ED0008FFDD1 /* KindeAuthUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05D239FA286553160086FCBE /* KindeAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D23A1F2865531A0086FCBE /* Build configuration list for PBXNativeTarget "KindeAuth" */;
+			buildPhases = (
+				75F6B2B6DFDE2211E60DEF89 /* [CP] Check Pods Manifest.lock */,
+				05D239F7286553160086FCBE /* Sources */,
+				05D239F8286553160086FCBE /* Frameworks */,
+				05D239F9286553160086FCBE /* Resources */,
+				05D32B56286AC70B00F54AFB /* ShellScript */,
+				D44F255AA81811FF429D0307 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KindeAuth;
+			productName = KindeAuth;
+			productReference = 05D239FB286553160086FCBE /* KindeAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05D23A0A2865531A0086FCBE /* KindeAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D23A222865531A0086FCBE /* Build configuration list for PBXNativeTarget "KindeAuthTests" */;
+			buildPhases = (
+				F72EC66722189DD49597B38D /* [CP] Check Pods Manifest.lock */,
+				05D23A072865531A0086FCBE /* Sources */,
+				05D23A082865531A0086FCBE /* Frameworks */,
+				05D23A092865531A0086FCBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D23A0D2865531A0086FCBE /* PBXTargetDependency */,
+			);
+			name = KindeAuthTests;
+			productName = KindeAuthTests;
+			productReference = 05D23A0B2865531A0086FCBE /* KindeAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05D23A142865531A0086FCBE /* KindeAuthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D23A252865531A0086FCBE /* Build configuration list for PBXNativeTarget "KindeAuthUITests" */;
+			buildPhases = (
+				4782CB41B3D39A5836BD1B79 /* [CP] Check Pods Manifest.lock */,
+				05D23A112865531A0086FCBE /* Sources */,
+				05D23A122865531A0086FCBE /* Frameworks */,
+				05D23A132865531A0086FCBE /* Resources */,
+				1B6DA98D3756681FE373D9F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D23A172865531A0086FCBE /* PBXTargetDependency */,
+			);
+			name = KindeAuthUITests;
+			productName = KindeAuthUITests;
+			productReference = 05D23A152865531A0086FCBE /* KindeAuthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05D239F3286553160086FCBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					05CA7FD4288A3ED0008FFDD1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					05D239FA286553160086FCBE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					05D23A0A2865531A0086FCBE = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 05D239FA286553160086FCBE;
+					};
+					05D23A142865531A0086FCBE = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 05D239FA286553160086FCBE;
+					};
+				};
+			};
+			buildConfigurationList = 05D239F6286553160086FCBE /* Build configuration list for PBXProject "KindeAuth" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05D239F2286553160086FCBE;
+			productRefGroup = 05D239FC286553160086FCBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05D239FA286553160086FCBE /* KindeAuth */,
+				05D23A0A2865531A0086FCBE /* KindeAuthTests */,
+				05D23A142865531A0086FCBE /* KindeAuthUITests */,
+				05CA7FD4288A3ED0008FFDD1 /* KindeAuthUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05CA7FD3288A3ED0008FFDD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05203D12288FCB980019F003 /* KindeAuth.plist in Resources */,
+				05CA7FE4288A3ED3008FFDD1 /* LaunchScreen.storyboard in Resources */,
+				05203D11288FCB980019F003 /* kinde-auth.json in Resources */,
+				05CA7FE1288A3ED3008FFDD1 /* Assets.xcassets in Resources */,
+				05CA7FDF288A3ED0008FFDD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D239F9286553160086FCBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05203D0D288FCB7F0019F003 /* kinde-auth.json in Resources */,
+				05D23A062865531A0086FCBE /* Preview Assets.xcassets in Resources */,
+				05203D0E288FCB7F0019F003 /* KindeAuth.plist in Resources */,
+				05D23A032865531A0086FCBE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D23A092865531A0086FCBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D23A132865531A0086FCBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D32B56286AC70B00F54AFB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		1B6DA98D3756681FE373D9F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4782CB41B3D39A5836BD1B79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KindeAuth-KindeAuthUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75F6B2B6DFDE2211E60DEF89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KindeAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC53B9FACA02ED713C16CACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KindeAuthUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF34D6F640E3B6CBFD71AEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D44F255AA81811FF429D0307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F72EC66722189DD49597B38D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KindeAuthTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05CA7FD1288A3ED0008FFDD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052A3F7028913E2F0048A9DB /* StringExtensions.swift in Sources */,
+				05CA7FDC288A3ED0008FFDD1 /* LoggedOutViewController.swift in Sources */,
+				05203D16288FDFD40019F003 /* LoggedInViewController.swift in Sources */,
+				05CA7FD8288A3ED0008FFDD1 /* AppDelegate.swift in Sources */,
+				05CA7FDA288A3ED0008FFDD1 /* SceneDelegate.swift in Sources */,
+				05CA7FE9288A868F008FFDD1 /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D239F7286553160086FCBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05AAAB4E2876BDBE00D37B1E /* LoggedOutView.swift in Sources */,
+				05AAAB4F2876BDBE00D37B1E /* LoggedInView.swift in Sources */,
+				05AAAB4D2876BDBE00D37B1E /* AppView.swift in Sources */,
+				05AAAB4C2876BDBE00D37B1E /* Logger.swift in Sources */,
+				05AAAB562876DE3100D37B1E /* StringExtensions.swift in Sources */,
+				05AAAB542876CD1600D37B1E /* FooterView.swift in Sources */,
+				05D239FF286553160086FCBE /* KindeAuthApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D23A072865531A0086FCBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D23A102865531A0086FCBE /* KindeAuthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D23A112865531A0086FCBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D23A1C2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift in Sources */,
+				05D23A1A2865531A0086FCBE /* KindeAuthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05D23A0D2865531A0086FCBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D239FA286553160086FCBE /* KindeAuth */;
+			targetProxy = 05D23A0C2865531A0086FCBE /* PBXContainerItemProxy */;
+		};
+		05D23A172865531A0086FCBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D239FA286553160086FCBE /* KindeAuth */;
+			targetProxy = 05D23A162865531A0086FCBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05CA7FDD288A3ED0008FFDD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05CA7FDE288A3ED0008FFDD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05CA7FE2288A3ED3008FFDD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05CA7FE3288A3ED3008FFDD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05CA7FE6288A3ED3008FFDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C02DB0AE09B112E08336057 /* Pods-KindeAuthUIKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KindeAuthUIKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05CA7FE7288A3ED3008FFDD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6962E820161E64266500485 /* Pods-KindeAuthUIKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KindeAuthUIKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05D23A1D2865531A0086FCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05D23A1E2865531A0086FCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05D23A202865531A0086FCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E129488A263612A21A3A0028 /* Pods-KindeAuth.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KindeAuth/Preview Content\"";
+				DEVELOPMENT_TEAM = X5B58C7GTZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05D23A212865531A0086FCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E29C22498FC055FD4E8EF2 /* Pods-KindeAuth.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KindeAuth/Preview Content\"";
+				DEVELOPMENT_TEAM = X5B58C7GTZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05D23A232865531A0086FCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DFDEF290BE907AC6E5B7FD6 /* Pods-KindeAuthTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KindeAuth.app/KindeAuth";
+			};
+			name = Debug;
+		};
+		05D23A242865531A0086FCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4169A72877D9D391F4A5F877 /* Pods-KindeAuthTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KindeAuth.app/KindeAuth";
+			};
+			name = Release;
+		};
+		05D23A262865531A0086FCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F18A61F1E9512982AE806707 /* Pods-KindeAuth-KindeAuthUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KindeAuth;
+			};
+			name = Debug;
+		};
+		05D23A272865531A0086FCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A0D4F50608205D7F6269F8 /* Pods-KindeAuth-KindeAuthUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KindeAuth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05CA7FE8288A3ED3008FFDD1 /* Build configuration list for PBXNativeTarget "KindeAuthUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05CA7FE6288A3ED3008FFDD1 /* Debug */,
+				05CA7FE7288A3ED3008FFDD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D239F6286553160086FCBE /* Build configuration list for PBXProject "KindeAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D23A1D2865531A0086FCBE /* Debug */,
+				05D23A1E2865531A0086FCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D23A1F2865531A0086FCBE /* Build configuration list for PBXNativeTarget "KindeAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D23A202865531A0086FCBE /* Debug */,
+				05D23A212865531A0086FCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D23A222865531A0086FCBE /* Build configuration list for PBXNativeTarget "KindeAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D23A232865531A0086FCBE /* Debug */,
+				05D23A242865531A0086FCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D23A252865531A0086FCBE /* Build configuration list for PBXNativeTarget "KindeAuthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D23A262865531A0086FCBE /* Debug */,
+				05D23A272865531A0086FCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05D239F3286553160086FCBE /* Project object */;
+}

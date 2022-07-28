@@ -1,0 +1,14 @@
+
+included:
+  - KindeAuth
+  - KindeAuthTests
+  - KindeAuthUITests
+excluded:
+  - Pods
+  # Generated code
+  - KindeAuth/Api/KindeManagementApi
+
+disabled_rules:
+  # Match default XCode formatting
+  - trailing_whitespace
+  - line_length
