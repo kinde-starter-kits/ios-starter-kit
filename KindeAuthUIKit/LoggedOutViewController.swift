@@ -25,6 +25,13 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func openDocs(_ sender: Any) {
+        // TODO: update the doc link
+        if let url = URL(string: "https://kinde.com/docs/sdks/nextjs-sdk") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
     private func navigateToLoggedInView() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let loggedInViewController = storyboard.instantiateViewController(identifier: "logged_in_vc")

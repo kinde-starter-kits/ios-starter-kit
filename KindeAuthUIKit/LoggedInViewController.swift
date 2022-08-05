@@ -7,12 +7,12 @@ class LoggedInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Auth.performWithFreshTokens { tokenResult in
-            switch tokenResult {
+        Auth.performWithFreshTokens { tokens in
+            switch tokens {
             case let .failure(error):
                 print("Failed to get auth token: \(error.localizedDescription)")
-            case let .success(accessToken):
-                KindeManagementApiClient.getUser(accessToken: accessToken) { (userProfile, error) in
+            case let .success(tokens):
+                KindeManagementApiClient.getUser(accessToken: tokens.accessToken) { (userProfile, error) in
                     if let userProfile = userProfile {
                         let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
                         print("Got profile for user \(userName)")
