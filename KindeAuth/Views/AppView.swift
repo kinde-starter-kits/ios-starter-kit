@@ -28,8 +28,12 @@ struct AppView: View {
                     LoggedOutView(logger: self.logger, onLoggedIn: onLoggedIn)
                 }
                 FooterView()
-            }.padding().frame(maxWidth: .infinity)
-            
+            }.padding().frame(maxWidth: .infinity).onAppear {
+                if isAuthenticated, user == nil {
+                    // Fetch the user profile, which is not persisted
+                    self.getUserProfile()
+                }
+            }
         }
     }
 }
@@ -44,17 +48,27 @@ extension AppView {
     
     func onLoggedIn() {
         self.isAuthenticated = true
-        
-        // Get the current user's profile via the Kinde Management API
-        // We could also fetch the user profile using the discovered endpoint, if it exists
-        Auth.performWithFreshTokens { tokenResult in
-            switch tokenResult {
+        self.getUserProfile()
+    }
+
+    func onLoggedOut() {
+        self.isAuthenticated = false
+        self.user = nil
+    }
+    
+    /// Get the current user's profile via the Kinde Management API
+    private func getUserProfile() {
+        Auth.performWithFreshTokens { tokens in
+            switch tokens {
             case let .failure(error):
-                self.logger?.error(message: "Failed to get auth token: \(error.localizedDescription)")
-            case let .success(accessToken):
-                self.logger?.debug(message: "Calling the Kinde Management API...")
-                KindeManagementApiClient.getUser(accessToken: accessToken) { (userProfile, error) in
-                    self.user = userProfile
+                self.logger?.error(message: "Failed to get access token: \(error.localizedDescription)")
+            case let .success(tokens):
+                KindeManagementApiClient.getUser(accessToken: tokens.accessToken) { (userProfile, error) in
+                    if let userProfile = userProfile {
+                        self.user = userProfile
+                        let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
+                        self.logger?.info(message: "Got profile for user \(userName)")
+                    }
                     
                     if let error = error {
                         self.logger?.error(message: "Failed to get user profile: \(error.localizedDescription)")
@@ -62,32 +76,5 @@ extension AppView {
                 }
             }
         }
-        
-        // Get all users via the Kinde Management API and log them to the console
-        Auth.performWithFreshTokens { tokenResult in
-            switch tokenResult {
-            case let .failure(error):
-                self.logger?.error(message: "Failed to get auth token: \(error.localizedDescription)")
-            case let .success(accessToken):
-                self.logger?.debug(message: "Calling the Kinde Management API...")
-                KindeManagementApiClient.getUsers(sort: UsersAPI.Sort_getUsers.nameAsc, pageSize: 100, userId: nil, nextToken: nil, accessToken: accessToken) { (response, error) in
-                    
-                    if let response = response, let users = response.users {
-                        for user in users {
-                            self.logger?.info(message: "\(String(describing: user))")
-                        }
-                    }
-                    
-                    if let error = error {
-                        self.logger?.error(message: "Failed to get users: \(error.localizedDescription)")
-                    }
-                }
-            }
-        }
-    }
-
-    func onLoggedOut() {
-        self.isAuthenticated = false
-        self.user = nil
     }
 }
