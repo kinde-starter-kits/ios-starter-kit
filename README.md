@@ -10,7 +10,7 @@ The [Kinde Swift iOS Starter Kits](https://github.com/kinde-starter-kits/kinde-s
 
 ## Starter Kits
 
-This workspace contains to two iOS starter kits:
+This workspace contains two iOS starter kits:
 
 - KindeAuth - a simple app demonstrating use of the Kinde Auth service for login, authenticated API call to the Kinde Management API, and logout. KindeAuth is implemented with [SwiftUI](https://developer.apple.com/documentation/swiftui/), using programmatic view layout.
 - KindeAuthUIKit - a simple app also demonstrating use of the Kinde Auth service, implemented in [UIKit](https://developer.apple.com/documentation/uikit) designed using a Storyboard.
