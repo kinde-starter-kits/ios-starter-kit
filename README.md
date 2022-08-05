@@ -1,6 +1,6 @@
 # Kinde Swift iOS Starter Kits
 
-The [Kinde Swift iOS Starter Kits](https://github.com/kinde-oss/kinde-auth-swift-ios-starter) are simple apps that demonstrate how to integrate your app with the Kinde authentication service and management API.
+The [Kinde Swift iOS Starter Kits](https://github.com/kinde-starter-kits/kinde-swift-starter-kit) are simple apps that demonstrate how to integrate your app with the Kinde authentication service and management API.
 
 ## Requirements
 

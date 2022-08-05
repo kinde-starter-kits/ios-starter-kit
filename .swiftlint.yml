@@ -3,10 +3,9 @@ included:
   - KindeAuth
   - KindeAuthTests
   - KindeAuthUITests
+  - KindeAuthUIKit
 excluded:
   - Pods
-  # Generated code
-  - KindeAuth/Api/KindeManagementApi
 
 disabled_rules:
   # Match default XCode formatting
