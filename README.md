@@ -31,7 +31,17 @@ The Kinde `Auth` service is configured with an instance of the `Config` class. T
 }
 ```
 
-Note: `your_url_scheme` can be any valid custom URL scheme, such as your app's bundle ID or an abbreviation.
+Note: `your_url_scheme` can be any valid custom URL scheme, such as your app's bundle ID or an abbreviation. It must match the scheme component of the _Allowed callback URLs_ and _Allowed logout redirect URLs_ you configure in your [Kinde business](https://kinde.com/docs/the-basics/getting-app-keys): E.g.,
+
+```
+{
+  "issuer": "https://app.example.com",
+  "clientId": "abc@live",
+  "redirectUri": "com.example.App://kinde_callback",
+  "postLogoutRedirectUri": "com.example.App://kinde_logoutcallback",
+  "scope": "offline openid"
+}
+```
 
 Before `Auth` can be used, a call to `Auth.configure()` must be made, typically in `AppDelegate` as part of `application(launchOptions)` for a UIKit app, or the `@main` initialization logic for a SwiftUI app. Likewise, if the Kinde Management API client is used, `KindeManagementApiClient.configure()` must be called prior to use.
 
