@@ -10,7 +10,7 @@ class LoggedInViewController: UIViewController {
         Auth.performWithFreshTokens { tokens in
             switch tokens {
             case let .failure(error):
-                print("Failed to get auth token: \(error.localizedDescription)")
+                alert(message: "Failed to get auth token: \(error.localizedDescription)", viewController: self)
             case let .success(tokens):
                 KindeManagementApiClient.getUser(accessToken: tokens.accessToken) { (userProfile, error) in
                     if let userProfile = userProfile {
@@ -21,7 +21,7 @@ class LoggedInViewController: UIViewController {
                         self.userLabel.text = userLabel
                     }
                     if let error = error {
-                        print("Failed to get user profile: \(error.localizedDescription)")
+                        alert(message: "Failed to get user profile: \(error.localizedDescription)", viewController: self)
                     }
                 }
             }
@@ -37,7 +37,7 @@ class LoggedInViewController: UIViewController {
                 (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(loggedOutViewController)
                 
             } else {
-                print("Logout failed")
+                alert(message: "Logout failed", viewController: self)
             }
         }
     }

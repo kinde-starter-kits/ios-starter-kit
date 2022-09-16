@@ -19,7 +19,7 @@ To run either example project, run `pod install` in the app directory first. The
 
 ## Configuration
 
-The Kinde `Auth` service is configured with an instance of the `Config` class. The example project uses the bundled `KindeAuth.plist` for configuration. Alternatively, configuration can be supplied in JSON format with the bundled `kinde-auth.json`. Enter the values for your [Kinde business](https://kinde.com/docs/the-basics/getting-app-keys): E.g.,
+The Kinde `Auth` service is configured with an instance of the `Config` class. The example project uses the bundled `KindeAuth.plist` for configuration. Alternatively, configuration can be supplied in JSON format with the bundled `kinde-auth.json`. Enter the values from the [App Keys](https://kinde.com/docs/the-basics/getting-app-keys) page for your Kinde business: E.g.,
 
 ```
 {
