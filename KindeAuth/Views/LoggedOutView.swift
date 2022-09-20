@@ -2,6 +2,9 @@ import SwiftUI
 import KindeAuthSwift
 
 struct LoggedOutView: View {
+    @State private var presentAlert = false
+    @State private var alertMessage = ""
+    
     private let logger: Logger?
     private let onLoggedIn: () -> Void
 
@@ -39,6 +42,12 @@ struct LoggedOutView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(.black, lineWidth: 5)
         )
+        .alert(isPresented: $presentAlert) {
+            Alert(
+                title: Text("Error"),
+                message: Text(alertMessage)
+            )
+        }
     }
     
     private func getViewController() -> UIViewController {
@@ -58,7 +67,11 @@ extension LoggedOutView {
         Auth.register(viewController: viewController) { result in
             switch result {
             case let .failure(error):
-                self.logger?.error(message: "Registration failed: \(error.localizedDescription)")
+                if !Auth.isUserCancellationErrorCode(error) {
+                    alertMessage = "Registration failed: \(error.localizedDescription)"
+                    self.logger?.error(message: alertMessage)
+                    presentAlert = true
+                }
             case .success:
                 self.onLoggedIn()
             }
@@ -69,7 +82,11 @@ extension LoggedOutView {
         Auth.login(viewController: viewController) { result in
             switch result {
             case let .failure(error):
-                self.logger?.error(message: "Login failed: \(error.localizedDescription)")
+                if !Auth.isUserCancellationErrorCode(error) {
+                    alertMessage = "Login failed: \(error.localizedDescription)"
+                    self.logger?.error(message: alertMessage)
+                    presentAlert = true
+                }
             case .success:
                 self.onLoggedIn()
             }

@@ -3,6 +3,8 @@ import KindeAuthSwift
 
 struct LoggedInView: View {
     @Binding var user: UserProfile?
+    @State private var presentAlert = false
+    @State private var alertMessage = ""
 
     private let logger: Logger?
     private let onLoggedOut: () -> Void
@@ -44,6 +46,12 @@ struct LoggedInView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(.black, lineWidth: 5)
         )
+        .alert(isPresented: $presentAlert) {
+            Alert(
+                title: Text("Error"),
+                message: Text(alertMessage)
+            )
+        }
     }
     
     private func getViewController() -> UIViewController {
@@ -64,7 +72,9 @@ extension LoggedInView {
             if result {
                 self.onLoggedOut()
             } else {
-                self.logger?.error(message: "Logout failed")
+                alertMessage = "Logout failed"
+                self.logger?.error(message: alertMessage)
+                presentAlert = true
             }
         }
     }

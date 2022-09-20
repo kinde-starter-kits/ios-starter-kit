@@ -7,7 +7,9 @@ class ViewController: UIViewController {
         Auth.login(viewController: self) { result in
             switch result {
             case let .failure(error):
-                print("Login failed: \(error.localizedDescription)")
+                if !Auth.isUserCancellationErrorCode(error) {
+                    alert(message: "Login failed: \(error.localizedDescription)", viewController: self)
+                }
             case .success:
                 self.navigateToLoggedInView()
             }
@@ -18,7 +20,9 @@ class ViewController: UIViewController {
         Auth.register(viewController: self) { result in
             switch result {
             case let .failure(error):
-                print("Registration failed: \(error.localizedDescription)")
+                if !Auth.isUserCancellationErrorCode(error) {
+                    alert(message: "Registration failed: \(error.localizedDescription)", viewController: self)
+                }
             case .success:
                 self.navigateToLoggedInView()
             }
@@ -39,4 +43,3 @@ class ViewController: UIViewController {
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(loggedInViewController)
     }
 }
-

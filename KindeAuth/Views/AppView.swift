@@ -4,6 +4,8 @@ import KindeAuthSwift
 struct AppView: View {
     @State private var isAuthenticated: Bool
     @State private var user: UserProfile?
+    @State private var presentAlert = false
+    @State private var alertMessage = ""
     
     private let logger: Logger?
     
@@ -34,6 +36,12 @@ struct AppView: View {
                     self.getUserProfile()
                 }
             }
+            .alert(isPresented: $presentAlert) {
+                Alert(
+                    title: Text("Error"),
+                    message: Text(alertMessage)
+                )
+            }
         }
     }
 }
@@ -61,7 +69,9 @@ extension AppView {
         Auth.performWithFreshTokens { tokens in
             switch tokens {
             case let .failure(error):
-                self.logger?.error(message: "Failed to get access token: \(error.localizedDescription)")
+                alertMessage = "Failed to get access token: \(error.localizedDescription)"
+                self.logger?.error(message: alertMessage)
+                presentAlert = true
             case let .success(tokens):
                 KindeManagementApiClient.getUser(accessToken: tokens.accessToken) { (userProfile, error) in
                     if let userProfile = userProfile {
@@ -69,9 +79,11 @@ extension AppView {
                         let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
                         self.logger?.info(message: "Got profile for user \(userName)")
                     }
-                    
+
                     if let error = error {
-                        self.logger?.error(message: "Failed to get user profile: \(error.localizedDescription)")
+                        alertMessage = "Failed to get user profile: \(error.localizedDescription)"
+                        self.logger?.error(message: alertMessage)
+                        presentAlert = true
                     }
                 }
             }

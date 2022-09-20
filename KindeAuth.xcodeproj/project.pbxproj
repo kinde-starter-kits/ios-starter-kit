@@ -19,6 +19,7 @@
 		05AAAB4F2876BDBE00D37B1E /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB472876BDBE00D37B1E /* LoggedInView.swift */; };
 		05AAAB542876CD1600D37B1E /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB532876CD1600D37B1E /* FooterView.swift */; };
 		05AAAB562876DE3100D37B1E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB552876DE3100D37B1E /* StringExtensions.swift */; };
+		05BB23B228D42B1D00411F83 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BB23B128D42B1C00411F83 /* Utilities.swift */; };
 		05CA7FD8288A3ED0008FFDD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA7FD7288A3ED0008FFDD1 /* AppDelegate.swift */; };
 		05CA7FDA288A3ED0008FFDD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA7FD9288A3ED0008FFDD1 /* SceneDelegate.swift */; };
 		05CA7FDC288A3ED0008FFDD1 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA7FDB288A3ED0008FFDD1 /* LoggedOutViewController.swift */; };
@@ -68,6 +69,7 @@
 		05AAAB472876BDBE00D37B1E /* LoggedInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
 		05AAAB532876CD1600D37B1E /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		05AAAB552876DE3100D37B1E /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		05BB23B128D42B1C00411F83 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		05CA7FD5288A3ED0008FFDD1 /* KindeAuthUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindeAuthUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CA7FD7288A3ED0008FFDD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05CA7FD9288A3ED0008FFDD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				05CA7FD9288A3ED0008FFDD1 /* SceneDelegate.swift */,
 				05CA7FDB288A3ED0008FFDD1 /* LoggedOutViewController.swift */,
 				05203D15288FDFD40019F003 /* LoggedInViewController.swift */,
+				05BB23B128D42B1C00411F83 /* Utilities.swift */,
 				05CA7FDD288A3ED0008FFDD1 /* Main.storyboard */,
 				05CA7FE0288A3ED3008FFDD1 /* Assets.xcassets */,
 				05CA7FE2288A3ED3008FFDD1 /* LaunchScreen.storyboard */,
@@ -612,6 +615,7 @@
 			files = (
 				052A3F7028913E2F0048A9DB /* StringExtensions.swift in Sources */,
 				05CA7FDC288A3ED0008FFDD1 /* LoggedOutViewController.swift in Sources */,
+				05BB23B228D42B1D00411F83 /* Utilities.swift in Sources */,
 				05203D16288FDFD40019F003 /* LoggedInViewController.swift in Sources */,
 				05CA7FD8288A3ED0008FFDD1 /* AppDelegate.swift in Sources */,
 				05CA7FDA288A3ED0008FFDD1 /* SceneDelegate.swift in Sources */,
