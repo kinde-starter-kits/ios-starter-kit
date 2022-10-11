@@ -6,7 +6,7 @@ PODS:
   - AppAuth/Core (1.5.0)
   - AppAuth/ExternalUserAgent (1.5.0):
     - AppAuth/Core
-  - KindeAuthSwift (0.1.0):
+  - KindeAuthSwift (0.1.1):
     - AnyCodable-FlightSchool (~> 0.6.1)
     - AppAuth
     - SwiftKeychainWrapper
@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AnyCodable-FlightSchool: 84b795a9d3ec7ba9e5488673d15cc1b37a566af4
   AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
-  KindeAuthSwift: 632e6dbf8b09b40fa46e3ee2abf2731266a3f1e0
+  KindeAuthSwift: 9f148a3d3b8bec509afdb918bc453cb4da5c72f0
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 

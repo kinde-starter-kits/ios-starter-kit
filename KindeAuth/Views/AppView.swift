@@ -15,9 +15,6 @@ struct AppView: View {
         // The Kinde authentication service must be configured before use
         Auth.configure(logger: self.logger)
         
-        // If the Kinde Management API is required, it must be configured before use
-        KindeManagementApiClient.configure()
-        
         _isAuthenticated = State(initialValue: Auth.isAuthorized())
     }
     
@@ -66,26 +63,17 @@ extension AppView {
     
     /// Get the current user's profile via the Kinde Management API
     private func getUserProfile() {
-        Auth.performWithFreshTokens { tokens in
-            switch tokens {
-            case let .failure(error):
-                alertMessage = "Failed to get access token: \(error.localizedDescription)"
+        
+        OAuthAPI.getUser { (userProfile, error) in
+            if let userProfile = userProfile {
+                self.user = userProfile
+                let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
+                self.logger?.info(message: "Got profile for user \(userName)")
+            }
+            if let error = error {
+                alertMessage = "Failed to get user profile: \(error.localizedDescription)"
                 self.logger?.error(message: alertMessage)
                 presentAlert = true
-            case let .success(tokens):
-                KindeManagementApiClient.getUser(accessToken: tokens.accessToken) { (userProfile, error) in
-                    if let userProfile = userProfile {
-                        self.user = userProfile
-                        let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
-                        self.logger?.info(message: "Got profile for user \(userName)")
-                    }
-
-                    if let error = error {
-                        alertMessage = "Failed to get user profile: \(error.localizedDescription)"
-                        self.logger?.error(message: alertMessage)
-                        presentAlert = true
-                    }
-                }
             }
         }
     }

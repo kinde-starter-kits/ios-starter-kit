@@ -31,8 +31,7 @@ struct LoggedOutView: View {
             Spacer()
             Text("Let’s start authenticating with KindeAuth").font(.largeTitle).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
             Text("Configure your app").font(.title3).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
-            // TODO: update the doc link
-            Link("Go to docs", destination: URL(string: "https://kinde.com/docs/sdks/nextjs-sdk")!)
+            Link("Go to docs", destination: URL(string: "https://kinde.com/docs/sdks/swift-sdk")!)
             Spacer()
         }
         .frame(maxWidth: .infinity)

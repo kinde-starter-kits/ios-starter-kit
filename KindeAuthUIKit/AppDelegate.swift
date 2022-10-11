@@ -8,9 +8,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // The Kinde authentication service must be configured before use
         Auth.configure(logger: Logger())
-        
-        // If the Kinde Management API is required, it must be configured before use
-        KindeManagementApiClient.configure()
 
         return true
     }

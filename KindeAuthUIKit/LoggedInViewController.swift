@@ -7,23 +7,16 @@ class LoggedInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Auth.performWithFreshTokens { tokens in
-            switch tokens {
-            case let .failure(error):
-                alert(message: "Failed to get auth token: \(error.localizedDescription)", viewController: self)
-            case let .success(tokens):
-                KindeManagementApiClient.getUser(accessToken: tokens.accessToken) { (userProfile, error) in
-                    if let userProfile = userProfile {
-                        let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
-                        print("Got profile for user \(userName)")
-                        let userLabel = "\(userProfile.firstName?.first?.uppercased() ?? "")\(userProfile.firstName?[1]?.uppercased() ?? "")"
-                        
-                        self.userLabel.text = userLabel
-                    }
-                    if let error = error {
-                        alert(message: "Failed to get user profile: \(error.localizedDescription)", viewController: self)
-                    }
-                }
+        OAuthAPI.getUser { (userProfile, error) in
+            if let userProfile = userProfile {
+                let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
+                print("Got profile for user \(userName)")
+                let userLabel = "\(userProfile.firstName?.first?.uppercased() ?? "")\(userProfile.firstName?[1]?.uppercased() ?? "")"
+                
+                self.userLabel.text = userLabel
+            }
+            if let error = error {
+                alert(message: "Failed to get user profile: \(error.localizedDescription)", viewController: self)
             }
         }
     }
