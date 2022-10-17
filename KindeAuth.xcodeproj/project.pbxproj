@@ -63,6 +63,8 @@
 		05203D0F288FCB980019F003 /* kinde-auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kinde-auth.json"; sourceTree = "<group>"; };
 		05203D10288FCB980019F003 /* KindeAuth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KindeAuth.plist; sourceTree = "<group>"; };
 		05203D15288FDFD40019F003 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		05AA580528E69FFA0071EB5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		05AA580628E6A0430071EB5A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		05AAAB432876BDBD00D37B1E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		05AAAB452876BDBE00D37B1E /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		05AAAB462876BDBE00D37B1E /* LoggedOutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,8 @@
 		05D239F2286553160086FCBE = {
 			isa = PBXGroup;
 			children = (
+				05AA580628E6A0430071EB5A /* LICENSE */,
+				05AA580528E69FFA0071EB5A /* README.md */,
 				05D239FD286553160086FCBE /* KindeAuth */,
 				05D23A0E2865531A0086FCBE /* KindeAuthTests */,
 				05D23A182865531A0086FCBE /* KindeAuthUITests */,

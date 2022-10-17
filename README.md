@@ -50,9 +50,12 @@ you configure in your [App Keys](https://kinde.com/docs/the-basics/getting-app-k
 }
 ```
 
-Before `Auth` can be used, a call to `Auth.configure()` must be made, typically in `AppDelegate` as part
-of `application(launchOptions)` for a UIKit app, or the `@main` initialization logic for a SwiftUI app.
-Likewise, if the Kinde Management API client is used, `KindeManagementApiClient.configure()` must be called prior to use.
+Before `Auth` or any Kinde Management APIs can be used, a call to `Auth.configure()` must be made, typically in `AppDelegate`
+as part of `application(launchOptions)` for a UIKit app, or the `@main` initialization logic for a SwiftUI app.
+
+## Kinde Management API
+
+[Kinde Management API](./Pods/KindeAuthSwift/Classes/KindeManagementAPI/README.md)
 
 ## Issue Reporting
 

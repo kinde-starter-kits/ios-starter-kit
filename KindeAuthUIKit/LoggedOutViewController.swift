@@ -30,8 +30,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openDocs(_ sender: Any) {
-        // TODO: update the doc link
-        if let url = URL(string: "https://kinde.com/docs/sdks/nextjs-sdk") {
+        if let url = URL(string: "https://kinde.com/docs/sdks/swift-sdk") {
             UIApplication.shared.open(url)
         }
     }
