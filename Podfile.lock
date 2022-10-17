@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AnyCodable-FlightSchool: 84b795a9d3ec7ba9e5488673d15cc1b37a566af4
   AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
-  KindeAuthSwift: 9f148a3d3b8bec509afdb918bc453cb4da5c72f0
+  KindeAuthSwift: f3e86f05338f9bee56a804a707c6bdae476a1e67
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 
