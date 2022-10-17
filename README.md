@@ -55,7 +55,7 @@ as part of `application(launchOptions)` for a UIKit app, or the `@main` initiali
 
 ## Kinde Management API
 
-[Kinde Management API](./KindeAuthSwift/Classes/KindeManagementAPI/README.md)
+[Kinde Management API](./Pods/KindeAuthSwift/Classes/KindeManagementAPI/README.md)
 
 ## Issue Reporting
 
