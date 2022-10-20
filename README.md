@@ -1,15 +1,15 @@
-# Kinde Swift iOS Starter Kits
+# Kinde Starter Kits - Swift
 
-The [Kinde Swift iOS Starter Kits](https://github.com/kinde-starter-kits/kinde-swift-starter-kit) are simple apps
+The [Kinde Swift Starter Kits](https://github.com/kinde-starter-kits/kinde-swift-starter-kit) are simple apps
 that demonstrate how to integrate your app with the Kinde authentication service and management API.
 
-## Requirements
+## Register an account on Kinde
 
-- iOS 12.4+
-- Xcode 12+
-- Swift 5+
+To get started set up an account on [Kinde](https://app.kinde.com/register).
 
-## Starter Kits
+## Setup your local environment
+
+Clone this repo.
 
 This workspace contains two iOS starter kits:
 
@@ -18,49 +18,47 @@ This workspace contains two iOS starter kits:
 - KindeAuthUIKit - a simple app also demonstrating use of the Kinde Auth service,
   implemented in [UIKit](https://developer.apple.com/documentation/uikit) designed using a Storyboard.
 
-To run either example project, run `pod install` in the app directory first. Then configure the Kinde Auth service as detailed in the following section.
+To setup either example project, run `pod install` in the app directory first.
 
-## Configuration
+Then find this configuration block in the `KindeAuth.plist` file(s):
 
-The Kinde `Auth` service is configured with an instance of the `Config` class. The example project uses the bundled `KindeAuth.plist` for configuration.
-Alternatively, configuration can be supplied in JSON format with the bundled `kinde-auth.json`.
-Enter the values from the [App Keys](https://kinde.com/docs/the-basics/getting-app-keys) page for your Kinde business: E.g.,
-
-```
-{
-  "issuer": "https://{your-business}.kinde.com",
-  "clientId": "{your-client-id}",
-  "redirectUri": "{your-url-scheme}://kinde_callback",
-  "postLogoutRedirectUri": "{your-url-scheme}://kinde_logoutcallback",
-  "scope": "offline openid"
-}
-```
-
-Note: `your_url_scheme` can be any valid custom URL scheme, such as your app's bundle ID or an abbreviation.
-It must match the scheme component of the _Allowed callback URLs_ and _Allowed logout redirect URLs_
-you configure in your [App Keys](https://kinde.com/docs/the-basics/getting-app-keys) page for your Kinde business: E.g.,
-
-```
-{
-  "issuer": "https://app.example.com",
-  "clientId": "abc@live",
-  "redirectUri": "com.example.App://kinde_callback",
-  "postLogoutRedirectUri": "com.example.App://kinde_logoutcallback",
-  "scope": "offline openid"
-}
+```plist
+<dict>
+	<key>Issuer</key>
+	<string>https://<your_subdomain>.kinde.com</string>
+	<key>ClientId</key>
+	<string><your_kinde_client_id></string>
+	<key>RedirectUri</key>
+	<string><your-url-scheme>://kinde_callback</string>
+	<key>PostLogoutRedirectUri</key>
+	<string><your-url-scheme>://kinde_logoutcallback</string>
+	<key>Scope</key>
+	<string>offline openid</string>
+</dict>
 ```
 
-Before `Auth` or any Kinde Management APIs can be used, a call to `Auth.configure()` must be made, typically in `AppDelegate`
-as part of `application(launchOptions)` for a UIKit app, or the `@main` initialization logic for a SwiftUI app.
+In the configuration block above replace the following placeholders with values from your Kinde [App Keys](https://kinde.com/docs/the-basics/getting-app-keys) page:
 
-## Kinde Management API
+- `https://<your_subdomain>.kinde.com` with the `Token host` value
+- `<your_kinde_client_id>` with the `Client ID` value.
 
-[Kinde Management API](https://github.com/kinde-oss/kinde-auth-swift/blob/main/KindeAuthSwift/Classes/KindeManagementApi/README.md)
+## Set your Callback and Logout URLs
 
-## Issue Reporting
+Your user will be redirected to Kinde to authenticate. After they have logged in or registered they will be redirected back to your iOS app.
 
-## Kinde
+You need to specify in Kinde which url you would like your user to be redirected to in order to authenticate your app.
 
-## License
+On the App Keys page set `Allowed callback URLs` to `<your-url-scheme>://kinde_callback`, where `your_url_scheme` can be any valid custom url scheme,
+such as your app's bundle ID or an abbreviation.
 
-This project is licensed under the Apache-2.0 license. See the [LICENSE](LICENSE) file for more information.
+> Important! This is required for your users to successfully log in to your app.
+
+You will also need to set the url they will be redirected to upon logout. Set the `Allowed logout redirect URLs` to `<your-url-scheme>://kinde_logoutcallback`.
+
+## Start your app
+
+Start your app in XCode, click on `Sign up` and register your first user for your business!
+
+## View users in Kinde
+
+If you navigate to the "Users" page within Kinde you will see your newly registered user there. 🚀
