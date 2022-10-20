@@ -22,7 +22,7 @@ To setup either example project, run `pod install` in the app directory first.
 
 Then find this configuration block in the `KindeAuth.plist` file(s):
 
-```plist
+```
 <dict>
 	<key>Issuer</key>
 	<string>https://<your_subdomain>.kinde.com</string>
