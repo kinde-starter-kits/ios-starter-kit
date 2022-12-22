@@ -33,7 +33,7 @@ Then find this configuration block in the `KindeAuth.plist` file(s):
 	<key>PostLogoutRedirectUri</key>
 	<string><your-url-scheme>://kinde_logoutcallback</string>
 	<key>Scope</key>
-	<string>offline openid</string>
+	<string>offline openid email profile</string>
 </dict>
 ```
 
