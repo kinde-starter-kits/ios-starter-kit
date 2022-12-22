@@ -11,6 +11,6 @@
 	<key>PostLogoutRedirectUri</key>
 	<string>{your-url-scheme}://kinde_logoutcallback</string>
 	<key>Scope</key>
-	<string>offline openid</string>
+	<string>offline openid email profile</string>
 </dict>
 </plist>
