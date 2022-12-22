@@ -1,5 +1,5 @@
 import SwiftUI
-import KindeAuthSwift
+import KindeSDK
 
 struct LoggedOutView: View {
     @State private var presentAlert = false

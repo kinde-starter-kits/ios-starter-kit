@@ -1,40 +1,37 @@
 PODS:
-  - AnyCodable-FlightSchool (0.6.5)
-  - AppAuth (1.5.0):
-    - AppAuth/Core (= 1.5.0)
-    - AppAuth/ExternalUserAgent (= 1.5.0)
-  - AppAuth/Core (1.5.0)
-  - AppAuth/ExternalUserAgent (1.5.0):
+  - AnyCodable-FlightSchool (0.6.7)
+  - AppAuth (1.6.0):
+    - AppAuth/Core (= 1.6.0)
+    - AppAuth/ExternalUserAgent (= 1.6.0)
+  - AppAuth/Core (1.6.0)
+  - AppAuth/ExternalUserAgent (1.6.0):
     - AppAuth/Core
-  - KindeAuthSwift (0.1.1):
+  - KindeSDK (0.1.1):
     - AnyCodable-FlightSchool (~> 0.6.1)
     - AppAuth
     - SwiftKeychainWrapper
   - SwiftKeychainWrapper (4.0.1)
-  - SwiftLint (0.47.1)
+  - SwiftLint (0.50.3)
 
 DEPENDENCIES:
-  - KindeAuthSwift (from `../kinde-auth-swift/KindeAuthSwift.podspec`)
+  - KindeSDK
   - SwiftLint
 
 SPEC REPOS:
   trunk:
     - AnyCodable-FlightSchool
     - AppAuth
+    - KindeSDK
     - SwiftKeychainWrapper
     - SwiftLint
 
-EXTERNAL SOURCES:
-  KindeAuthSwift:
-    :path: "../kinde-auth-swift/KindeAuthSwift.podspec"
-
 SPEC CHECKSUMS:
-  AnyCodable-FlightSchool: 84b795a9d3ec7ba9e5488673d15cc1b37a566af4
-  AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
-  KindeAuthSwift: f3e86f05338f9bee56a804a707c6bdae476a1e67
+  AnyCodable-FlightSchool: 261cbe76757802b17d471b9059b21e6fa5edf57b
+  AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
+  KindeSDK: 6e764da5500c3f16a04d596bdbdebcd4d35c92ad
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
-  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: 6e0015dcbb2a656759ba7acc36f0f48740a00093
+PODFILE CHECKSUM: c2c3d31428182dceafb8c1d8c60c1b784f92ddda
 
 COCOAPODS: 1.11.3
