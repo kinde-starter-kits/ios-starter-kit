@@ -1,5 +1,5 @@
 import SwiftUI
-import KindeAuthSwift
+import KindeSDK
 
 struct LoggedInView: View {
     @Binding var user: UserProfile?

@@ -1,5 +1,5 @@
 import UIKit
-import KindeAuthSwift
+import KindeSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

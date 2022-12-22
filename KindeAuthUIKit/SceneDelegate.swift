@@ -1,5 +1,5 @@
 import UIKit
-import KindeAuthSwift
+import KindeSDK
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

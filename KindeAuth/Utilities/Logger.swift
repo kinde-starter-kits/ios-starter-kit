@@ -1,7 +1,7 @@
 import os.log
-import KindeAuthSwift
+import KindeSDK
 
-struct Logger: KindeAuthSwift.Logger {
+struct Logger: KindeSDK.Logger {
     func debug(message: String) {
         os_log("%s", type: .debug, message)
     }

@@ -5,10 +5,7 @@ target 'KindeAuth' do
 
   # Pods for KindeAuth
   pod 'SwiftLint'
-
-  # TODO
-  #pod 'KindeAuthSwift', :git => 'https://github.com/kinde-oss/kinde-auth-swift.git'
-  pod 'KindeAuthSwift', :path => '../kinde-auth-swift/KindeAuthSwift.podspec'
+  pod 'KindeSDK'
 
   target 'KindeAuthTests' do
     inherit! :search_paths
@@ -24,12 +21,8 @@ end
 target 'KindeAuthUIKit' do
   use_frameworks!
 
-  # TODO: add this to build
   # Pods for KindeAuth
   pod 'SwiftLint'
-
-  # TODO
-  #pod 'KindeAuthSwift', :git => 'https://github.com/kinde-oss/kinde-auth-swift.git'
-  pod 'KindeAuthSwift', :path => '../kinde-auth-swift/KindeAuthSwift.podspec'
+  pod 'KindeSDK'
 
 end

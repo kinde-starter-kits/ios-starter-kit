@@ -1,5 +1,5 @@
 import SwiftUI
-import KindeAuthSwift
+import KindeSDK
 
 struct AppView: View {
     @State private var isAuthenticated: Bool
