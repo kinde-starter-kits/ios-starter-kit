@@ -6,7 +6,7 @@ PODS:
   - AppAuth/Core (1.6.0)
   - AppAuth/ExternalUserAgent (1.6.0):
     - AppAuth/Core
-  - KindeSDK (0.1.1):
+  - KindeSDK (0.1.2):
     - AnyCodable-FlightSchool (~> 0.6.1)
     - AppAuth
     - SwiftKeychainWrapper
@@ -14,24 +14,33 @@ PODS:
   - SwiftLint (0.50.3)
 
 DEPENDENCIES:
-  - KindeSDK
+  - KindeSDK (from `https://github.com/tanzilya/kinde-sdk-ios.git`, branch `feature/api_v2`)
   - SwiftLint
 
 SPEC REPOS:
   trunk:
     - AnyCodable-FlightSchool
     - AppAuth
-    - KindeSDK
     - SwiftKeychainWrapper
     - SwiftLint
+
+EXTERNAL SOURCES:
+  KindeSDK:
+    :branch: feature/api_v2
+    :git: https://github.com/tanzilya/kinde-sdk-ios.git
+
+CHECKOUT OPTIONS:
+  KindeSDK:
+    :commit: d1e7697c889492167939c83ebf92167c2aa663f7
+    :git: https://github.com/tanzilya/kinde-sdk-ios.git
 
 SPEC CHECKSUMS:
   AnyCodable-FlightSchool: 261cbe76757802b17d471b9059b21e6fa5edf57b
   AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
-  KindeSDK: 6e764da5500c3f16a04d596bdbdebcd4d35c92ad
+  KindeSDK: ad603d98de558394cdb89f154ef168c830bc8c6d
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: c2c3d31428182dceafb8c1d8c60c1b784f92ddda
+PODFILE CHECKSUM: 119454a8ba00eca23f55874c30002cda568f8ebc
 
 COCOAPODS: 1.11.3

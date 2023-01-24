@@ -67,7 +67,7 @@ extension AppView {
         OAuthAPI.getUser { (userProfile, error) in
             if let userProfile = userProfile {
                 self.user = userProfile
-                let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
+                let userName = "\(userProfile.givenName ?? "") \(userProfile.familyName ?? "")"
                 self.logger?.info(message: "Got profile for user \(userName)")
             }
             if let error = error {

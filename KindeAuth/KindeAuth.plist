@@ -12,5 +12,7 @@
 	<string>{your-url-scheme}://kinde_logoutcallback</string>
 	<key>Scope</key>
 	<string>offline openid email profile</string>
+	<key>Audience</key>
+	<string>{your-audience}</string>
 </dict>
 </plist>

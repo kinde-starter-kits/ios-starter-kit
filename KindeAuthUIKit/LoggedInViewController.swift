@@ -9,9 +9,9 @@ class LoggedInViewController: UIViewController {
         
         OAuthAPI.getUser { (userProfile, error) in
             if let userProfile = userProfile {
-                let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
+                let userName = "\(userProfile.givenName ?? "") \(userProfile.familyName ?? "")"
                 print("Got profile for user \(userName)")
-                let userLabel = "\(userProfile.firstName?.first?.uppercased() ?? "")\(userProfile.firstName?[1]?.uppercased() ?? "")"
+                let userLabel = "\(userProfile.givenName?.first?.uppercased() ?? "")\(userProfile.givenName?[1]?.uppercased() ?? "")"
                 
                 self.userLabel.text = userLabel
             }

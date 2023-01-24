@@ -5,7 +5,7 @@ target 'KindeAuth' do
 
   # Pods for KindeAuth
   pod 'SwiftLint'
-  pod 'KindeSDK'
+  pod 'KindeSDK', :git => 'https://github.com/tanzilya/kinde-sdk-ios.git', :branch => 'feature/api_v2'
 
   target 'KindeAuthTests' do
     inherit! :search_paths
@@ -23,6 +23,6 @@ target 'KindeAuthUIKit' do
 
   # Pods for KindeAuth
   pod 'SwiftLint'
-  pod 'KindeSDK'
+  pod 'KindeSDK', :git => 'https://github.com/tanzilya/kinde-sdk-ios.git', :branch => 'feature/api_v2'
 
 end
