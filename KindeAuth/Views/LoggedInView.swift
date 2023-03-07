@@ -26,7 +26,7 @@ struct LoggedInView: View {
                     .padding(-6)
                 ).padding(.trailing)
                 Button("Sign Out", action: {
-                    self.logout(viewController: self.getViewController())
+                    self.logout()
                 })
             }
         }
@@ -53,22 +53,23 @@ struct LoggedInView: View {
             )
         }
     }
-    
-    private func getViewController() -> UIViewController {
-        let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-        return (scene?.windows.first?.rootViewController)!
-    }
 }
 
 struct LoggedInView_Previews: PreviewProvider {
     static var previews: some View {
-        LoggedInView(user: .constant(UserProfile(id: "id", providedId: "providedId", name: "Bob", givenName: "Bob", familyName: "Dylan", updatedAt: "31-03-2022" )), logger: nil) {}
+        LoggedInView(user: .constant(UserProfile(id: "id",
+                                                 providedId: "providedId",
+                                                 name: "Bob",
+                                                 givenName: "Bob",
+                                                 familyName: "Dylan",
+                                                 updatedAt: 12345 )),
+                     logger: nil) {}
     }
 }
 
 extension LoggedInView {
-    func logout(viewController: UIViewController) {
-        Auth.logout(viewController: viewController) { result in
+    func logout() {
+        Auth.logout { result in
             if result {
                 self.onLoggedOut()
             } else {

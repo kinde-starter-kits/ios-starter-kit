@@ -19,10 +19,10 @@ struct LoggedOutView: View {
                 Text("KindeAuth").font(.title)
                 Spacer()
                 Button("Sign In", action: {
-                    self.login(viewController: self.getViewController())
+                    self.login()
                 })
                 Button("Sign Up", action: {
-                    self.register(viewController: self.getViewController())
+                    self.register()
                 })
             }
         }
@@ -48,11 +48,6 @@ struct LoggedOutView: View {
             )
         }
     }
-    
-    private func getViewController() -> UIViewController {
-        let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-        return (scene?.windows.first?.rootViewController)!
-    }
 }
 
 struct LoggedOutView_Previews: PreviewProvider {
@@ -62,8 +57,8 @@ struct LoggedOutView_Previews: PreviewProvider {
 }
 
 extension LoggedOutView {
-    func register(viewController: UIViewController) {
-        Auth.register(viewController: viewController) { result in
+    func register() {
+        Auth.register { result in
             switch result {
             case let .failure(error):
                 if !Auth.isUserCancellationErrorCode(error) {
@@ -77,8 +72,8 @@ extension LoggedOutView {
         }
     }
     
-    func login(viewController: UIViewController) {
-        Auth.login(viewController: viewController) { result in
+    func login() {
+        Auth.login { result in
             switch result {
             case let .failure(error):
                 if !Auth.isUserCancellationErrorCode(error) {

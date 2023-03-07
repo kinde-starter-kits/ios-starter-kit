@@ -13,7 +13,7 @@ struct AppView: View {
         self.logger = Logger()
         
         // The Kinde authentication service must be configured before use
-        Auth.configure(logger: self.logger)
+        Auth.configure(self.logger)
         
         _isAuthenticated = State(initialValue: Auth.isAuthorized())
     }
@@ -49,8 +49,7 @@ struct AppView_Previews: PreviewProvider {
     }
 }
 
-extension AppView {
-    
+extension AppView {    
     func onLoggedIn() {
         self.isAuthenticated = true
         self.getUserProfile()
@@ -63,18 +62,23 @@ extension AppView {
     
     /// Get the current user's profile via the Kinde Management API
     private func getUserProfile() {
-        
-        OAuthAPI.getUser { (userProfile, error) in
-            if let userProfile = userProfile {
-                self.user = userProfile
-                let userName = "\(userProfile.givenName ?? "") \(userProfile.familyName ?? "")"
-                self.logger?.info(message: "Got profile for user \(userName)")
-            }
-            if let error = error {
-                alertMessage = "Failed to get user profile: \(error.localizedDescription)"
-                self.logger?.error(message: alertMessage)
-                presentAlert = true
-            }
+        Task {
+            await asyncGetUserProfile()
+        }
+    }
+    
+    private func asyncGetUserProfile() async -> Bool {
+        do {
+            let userProfile = try await OAuthAPI.getUser()
+            self.user = userProfile
+            let userName = "\(userProfile.givenName ?? "") \(userProfile.familyName ?? "")"
+            self.logger?.info(message: "Got profile for user \(userName)")
+            return true
+        } catch {
+            alertMessage = "Failed to get user profile: \(error.localizedDescription)"
+            self.logger?.error(message: alertMessage)
+            presentAlert = true
+            return false
         }
     }
 }

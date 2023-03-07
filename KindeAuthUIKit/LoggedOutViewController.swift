@@ -4,7 +4,7 @@ import KindeSDK
 class ViewController: UIViewController {
     
     @IBAction func signIn(_ sender: Any) {
-        Auth.login(viewController: self) { result in
+        Auth.login { result in
             switch result {
             case let .failure(error):
                 if !Auth.isUserCancellationErrorCode(error) {
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
-        Auth.register(viewController: self) { result in
+        Auth.register { result in
             switch result {
             case let .failure(error):
                 if !Auth.isUserCancellationErrorCode(error) {
