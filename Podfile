@@ -9,7 +9,9 @@ target 'KindeAuth' do
 
   target 'KindeAuthTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'MockingbirdFramework'
   end
 
   target 'KindeAuthUITests' do

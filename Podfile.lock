@@ -8,16 +8,25 @@ PODS:
   - KindeSDK (1.1):
     - AppAuth
     - SwiftKeychainWrapper
+  - MockingbirdFramework (0.20.0)
+  - Nimble (11.2.1)
+  - Quick (6.1.0)
   - SwiftKeychainWrapper (4.0.1)
   - SwiftLint (0.50.3)
 
 DEPENDENCIES:
   - KindeSDK (from `https://github.com/tanzilya/kinde-sdk-ios.git`, branch `feature/api_v2`)
+  - MockingbirdFramework
+  - Nimble
+  - Quick
   - SwiftLint
 
 SPEC REPOS:
   trunk:
     - AppAuth
+    - MockingbirdFramework
+    - Nimble
+    - Quick
     - SwiftKeychainWrapper
     - SwiftLint
 
@@ -34,9 +43,12 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
   KindeSDK: 07a3b248c8c25218ca70b2e5c267a72b8fa98522
+  MockingbirdFramework: 54e35fbbb47b806c1a1fae2cf3ef99f6eceb55e5
+  Nimble: 516ac503a0fafaa8e41dbb4a70a61be421fa893a
+  Quick: 6676ffb409bf04abba2ff23902af2407bfc6ac90
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: e406d79e8cae924263ea86ba21571c140a45121b
+PODFILE CHECKSUM: a3c183adbf76e59529b700f8817c25889b45e2aa
 
 COCOAPODS: 1.11.3
