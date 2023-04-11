@@ -4,12 +4,11 @@ import Mockingbird
 import KindeSDK
 import AppAuth
 import KindeAuth
-import KindeAuthUIKit
 
 class AuthSpec: QuickSpec {
     override func spec() {
         
-        describe("AuthSpec") {
+        describe("Auth") {
             
             it("is unauthorised after initialisation") {
                 Auth.configure()

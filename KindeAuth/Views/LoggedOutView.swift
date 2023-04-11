@@ -15,37 +15,40 @@ struct LoggedOutView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("KindeAuth").font(.title)
-                Spacer()
-                Button("Sign In", action: {
-                    self.login()
-                })
-                Button("Sign Up", action: {
-                    self.register()
-                })
+            VStack {
+                HStack {
+                    Text("KindeAuth").font(.title)
+                    Spacer()
+                    Button("Sign In", action: {
+                        self.login()
+                    })
+                    Button("Sign Up", action: {
+                        self.register()
+                    })
+                }
             }
-        }
-        .padding(.bottom)
-        VStack {
-            Spacer()
-            Text("Let’s start authenticating with KindeAuth").font(.largeTitle).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
-            Text("Configure your app").font(.title3).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
-            Link("Go to docs", destination: URL(string: "https://kinde.com/docs/sdks/swift-sdk")!)
-            Spacer()
-        }
-        .frame(maxWidth: .infinity)
-        .background(.black)
-        .cornerRadius(20)
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(.black, lineWidth: 5)
-        )
-        .alert(isPresented: $presentAlert) {
-            Alert(
-                title: Text("Error"),
-                message: Text(alertMessage)
+            .padding(.bottom)
+            VStack {
+                Spacer()
+                Text("Let’s start authenticating with KindeAuth").font(.largeTitle).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
+                Text("Configure your app").font(.title3).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
+                Link("Go to docs", destination: URL(string: "https://kinde.com/docs/sdks/swift-sdk")!)
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
+            .background(.black)
+            .cornerRadius(20)
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(.black, lineWidth: 5)
             )
+        }
+        .alert(Text("Error"), isPresented: $presentAlert) {
+            Button("OK") {
+                presentAlert = false
+            }
+        } message: {
+            Text(alertMessage)
         }
     }
 }
@@ -64,7 +67,9 @@ extension LoggedOutView {
                 if !Auth.isUserCancellationErrorCode(error) {
                     alertMessage = "Registration failed: \(error.localizedDescription)"
                     self.logger?.error(message: alertMessage)
-                    presentAlert = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        presentAlert = true
+                    }
                 }
             case .success:
                 self.onLoggedIn()
@@ -79,7 +84,9 @@ extension LoggedOutView {
                 if !Auth.isUserCancellationErrorCode(error) {
                     alertMessage = "Login failed: \(error.localizedDescription)"
                     self.logger?.error(message: alertMessage)
-                    presentAlert = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        presentAlert = true
+                    }
                 }
             case .success:
                 self.onLoggedIn()
