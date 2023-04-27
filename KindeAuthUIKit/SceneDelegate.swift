@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Select the initial view controller based on authentication state
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if Auth.isAuthorized() {
+        if KindeSDKAPI.auth.isAuthorized() {
             let loggedInViewController = storyboard.instantiateViewController(identifier: "logged_in_vc")
             window?.rootViewController = loggedInViewController
         } else {

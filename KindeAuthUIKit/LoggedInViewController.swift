@@ -26,7 +26,7 @@ class LoggedInViewController: UIViewController {
     }
     
     @IBAction func signOut(_ sender: Any) {
-        Auth.logout { result in
+        KindeSDKAPI.auth.logout { result in
             if result {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let loggedOutViewController = storyboard.instantiateViewController(identifier: "logged_out_vc")

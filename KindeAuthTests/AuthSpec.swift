@@ -11,26 +11,27 @@ class AuthSpec: QuickSpec {
         describe("Auth") {
             
             it("is unauthorised after initialisation") {
-                Auth.configure()
-                expect(Auth.isAuthorized()) == false
+                KindeSDKAPI.configure()
+                expect(KindeSDKAPI.auth.isAuthorized()) == false
             }
             
             it("check helper functions") {
-                guard Auth.isAuthorized() == true else { return }
-                let userDetails = Auth.getUserDetails()
-                expect(userDetails.keys.count).to(beGreaterThan(0))
+                let auth: Auth = KindeSDKAPI.auth
+                guard auth.isAuthorized() == true else { return }
+                let userDetails: User? = auth.getUserDetails()
+                expect(userDetails?.id).to(beGreaterThan(0))
                 
-                let audClaim = Auth.getClaim(key: "aud")
+                let audClaim = auth.getClaim(key: "aud")
                 expect(audClaim).notTo(beNil())
                 
-                let permissions = Auth.getPermissions()
-                expect(permissions.keys.count).to(beGreaterThan(0))
+                let permissions = auth.getPermissions()
+                expect(permissions).notTo(beNil())
                 
-                let organization = Auth.getOrganization()
-                expect(organization.keys.count).to(beGreaterThan(0))
+                let organization = auth.getOrganization()
+                expect(organization).notTo(beNil())
                 
-                let userOrganizations = Auth.getUserOrganizations()
-                expect(userOrganizations.keys.count).to(beGreaterThan(0))
+                let userOrganizations = auth.getUserOrganizations()
+                expect(userOrganizations).notTo(beNil())
             }
         }
     }

@@ -69,7 +69,7 @@ struct LoggedInView_Previews: PreviewProvider {
 
 extension LoggedInView {
     func logout() {
-        Auth.logout { result in
+        KindeSDKAPI.auth.logout { result in
             if result {
                 self.onLoggedOut()
             } else {

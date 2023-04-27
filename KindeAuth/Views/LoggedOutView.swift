@@ -7,6 +7,7 @@ struct LoggedOutView: View {
     
     private let logger: Logger?
     private let onLoggedIn: () -> Void
+    private let auth: Auth = KindeSDKAPI.auth
 
     init(logger: Logger?, onLoggedIn: @escaping () -> Void) {
         self.logger = logger
@@ -61,10 +62,10 @@ struct LoggedOutView_Previews: PreviewProvider {
 
 extension LoggedOutView {
     func register() {
-        Auth.register { result in
+        auth.register { result in
             switch result {
             case let .failure(error):
-                if !Auth.isUserCancellationErrorCode(error) {
+                if !auth.isUserCancellationErrorCode(error) {
                     alertMessage = "Registration failed: \(error.localizedDescription)"
                     self.logger?.error(message: alertMessage)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -78,10 +79,10 @@ extension LoggedOutView {
     }
     
     func login() {
-        Auth.login { result in
+        auth.login { result in
             switch result {
             case let .failure(error):
-                if !Auth.isUserCancellationErrorCode(error) {
+                if !auth.isUserCancellationErrorCode(error) {
                     alertMessage = "Login failed: \(error.localizedDescription)"
                     self.logger?.error(message: alertMessage)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {

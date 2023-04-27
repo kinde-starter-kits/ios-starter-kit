@@ -13,9 +13,9 @@ struct AppView: View {
         self.logger = Logger()
         
         // The Kinde authentication service must be configured before use
-        Auth.configure(self.logger)
+        KindeSDKAPI.configure(self.logger)
         
-        _isAuthenticated = State(initialValue: Auth.isAuthorized())
+        _isAuthenticated = State(initialValue: KindeSDKAPI.auth.isAuthorized())
     }
     
     var body: some View {
