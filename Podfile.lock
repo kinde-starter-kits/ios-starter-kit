@@ -34,7 +34,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   KindeSDK:
-    :commit: bc85906b80dd34707002fecdb4761ab7960d5538
+    :commit: 8f9562f1625977db09ad3493f3e969bce8358694
     :git: https://github.com/tanzilya/kinde-sdk-ios.git
 
 SPEC CHECKSUMS:

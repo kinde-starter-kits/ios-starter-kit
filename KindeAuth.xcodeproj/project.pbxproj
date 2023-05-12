@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05203D0E288FCB7F0019F003 /* KindeAuth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05203D0C288FCB7F0019F003 /* KindeAuth.plist */; };
-		05203D12288FCB980019F003 /* KindeAuth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05203D10288FCB980019F003 /* KindeAuth.plist */; };
 		05203D16288FDFD40019F003 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05203D15288FDFD40019F003 /* LoggedInViewController.swift */; };
 		052A3F7028913E2F0048A9DB /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB552876DE3100D37B1E /* StringExtensions.swift */; };
 		05AAAB4D2876BDBE00D37B1E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AAAB452876BDBE00D37B1E /* AppView.swift */; };
@@ -31,9 +29,9 @@
 		0DB6C017989EB18FD80A323C /* Pods_KindeAuthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281B80B79A1C7FC86C6B4A40 /* Pods_KindeAuthTests.framework */; };
 		24BD9608A02B6DA73EDBC3E5 /* Pods_KindeAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4512C06716A09E595E238C /* Pods_KindeAuth.framework */; };
 		3B1B846729E5FF4B005DEF54 /* kinde-auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B1B846629E5FF4B005DEF54 /* kinde-auth.json */; };
-		3B1B846929E5FFE4005DEF54 /* kinde-auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B1B846829E5FFE4005DEF54 /* kinde-auth.json */; };
 		3B5029FF29B76A7E00BE1F25 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5029FE29B76A7E00BE1F25 /* Logger.swift */; };
 		3B502A0029B76A7E00BE1F25 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5029FE29B76A7E00BE1F25 /* Logger.swift */; };
+		3B66617E2A09119D00624572 /* kinde-auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B1B846629E5FF4B005DEF54 /* kinde-auth.json */; };
 		3BAAF3C129DB0C3E0099B9EB /* AuthErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAF3C029DB0C3E0099B9EB /* AuthErrorSpec.swift */; };
 		3BAAF3C529DB2A3C0099B9EB /* DefaultLoggerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAF3C429DB2A3C0099B9EB /* DefaultLoggerSpec.swift */; };
 		3BAAF3C729DB31850099B9EB /* StringJWTTokenDecodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAF3C629DB31850099B9EB /* StringJWTTokenDecodeSpec.swift */; };
@@ -75,8 +73,6 @@
 
 /* Begin PBXFileReference section */
 		03E29C22498FC055FD4E8EF2 /* Pods-KindeAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuth.release.xcconfig"; path = "Target Support Files/Pods-KindeAuth/Pods-KindeAuth.release.xcconfig"; sourceTree = "<group>"; };
-		05203D0C288FCB7F0019F003 /* KindeAuth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KindeAuth.plist; sourceTree = "<group>"; };
-		05203D10288FCB980019F003 /* KindeAuth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KindeAuth.plist; sourceTree = "<group>"; };
 		05203D15288FDFD40019F003 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		05AA580528E69FFA0071EB5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05AA580628E6A0430071EB5A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -107,7 +103,6 @@
 		2DFDEF290BE907AC6E5B7FD6 /* Pods-KindeAuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuthTests.debug.xcconfig"; path = "Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests.debug.xcconfig"; sourceTree = "<group>"; };
 		389DB511EEB3E4AB88CE5AD6 /* Pods_KindeAuth_KindeAuthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindeAuth_KindeAuthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1B846629E5FF4B005DEF54 /* kinde-auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kinde-auth.json"; sourceTree = "<group>"; };
-		3B1B846829E5FFE4005DEF54 /* kinde-auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kinde-auth.json"; sourceTree = "<group>"; };
 		3B5029FE29B76A7E00BE1F25 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		3BAAF3BA29DAC9620099B9EB /* KindeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KindeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAAF3BE29DAC97E0099B9EB /* KindeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KindeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,8 +179,6 @@
 		05CA7FD6288A3ED0008FFDD1 /* KindeAuthUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				3B1B846829E5FFE4005DEF54 /* kinde-auth.json */,
-				05203D10288FCB980019F003 /* KindeAuth.plist */,
 				05CA7FD7288A3ED0008FFDD1 /* AppDelegate.swift */,
 				05CA7FD9288A3ED0008FFDD1 /* SceneDelegate.swift */,
 				05CA7FDB288A3ED0008FFDD1 /* LoggedOutViewController.swift */,
@@ -202,6 +195,7 @@
 		05D239F2286553160086FCBE = {
 			isa = PBXGroup;
 			children = (
+				3B1B846629E5FF4B005DEF54 /* kinde-auth.json */,
 				05AA580628E6A0430071EB5A /* LICENSE */,
 				05AA580528E69FFA0071EB5A /* README.md */,
 				05D239FD286553160086FCBE /* KindeAuth */,
@@ -228,8 +222,6 @@
 		05D239FD286553160086FCBE /* KindeAuth */ = {
 			isa = PBXGroup;
 			children = (
-				3B1B846629E5FF4B005DEF54 /* kinde-auth.json */,
-				05203D0C288FCB7F0019F003 /* KindeAuth.plist */,
 				05AAAB422876BDBD00D37B1E /* Utilities */,
 				05AAAB442876BDBE00D37B1E /* Views */,
 				05D239FE286553160086FCBE /* KindeAuthApp.swift */,
@@ -309,7 +301,7 @@
 				05CA7FD3288A3ED0008FFDD1 /* Resources */,
 				0570EA68289CB98700EEA16C /* ShellScript */,
 				3BAAF3BD29DAC9620099B9EB /* Embed Frameworks */,
-				9AD03B49CC18EC067228CF3D /* [CP] Embed Pods Frameworks */,
+				22B5921D8A6B228D0A96E931 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,7 +321,7 @@
 				05D239F8286553160086FCBE /* Frameworks */,
 				05D239F9286553160086FCBE /* Resources */,
 				05D32B56286AC70B00F54AFB /* ShellScript */,
-				60BF0B3E03A4F051FA23845D /* [CP] Embed Pods Frameworks */,
+				9F57D2DB153417CF1B85A1CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,7 +360,7 @@
 				05D23A112865531A0086FCBE /* Sources */,
 				05D23A122865531A0086FCBE /* Frameworks */,
 				05D23A132865531A0086FCBE /* Resources */,
-				2755A7DB8697BDD66E932D96 /* [CP] Embed Pods Frameworks */,
+				16B7DA6930840436A5C58767 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,9 +424,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05203D12288FCB980019F003 /* KindeAuth.plist in Resources */,
-				3B1B846929E5FFE4005DEF54 /* kinde-auth.json in Resources */,
 				05CA7FE4288A3ED3008FFDD1 /* LaunchScreen.storyboard in Resources */,
+				3B66617E2A09119D00624572 /* kinde-auth.json in Resources */,
 				05CA7FE1288A3ED3008FFDD1 /* Assets.xcassets in Resources */,
 				05CA7FDF288A3ED0008FFDD1 /* Main.storyboard in Resources */,
 			);
@@ -446,7 +437,6 @@
 			files = (
 				05D23A062865531A0086FCBE /* Preview Assets.xcassets in Resources */,
 				3B1B846729E5FF4B005DEF54 /* kinde-auth.json in Resources */,
-				05203D0E288FCB7F0019F003 /* KindeAuth.plist in Resources */,
 				05D23A032865531A0086FCBE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +492,7 @@
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
-		2755A7DB8697BDD66E932D96 /* [CP] Embed Pods Frameworks */ = {
+		16B7DA6930840436A5C58767 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -517,6 +507,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22B5921D8A6B228D0A96E931 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4782CB41B3D39A5836BD1B79 /* [CP] Check Pods Manifest.lock */ = {
@@ -539,23 +546,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		60BF0B3E03A4F051FA23845D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		75F6B2B6DFDE2211E60DEF89 /* [CP] Check Pods Manifest.lock */ = {
@@ -597,21 +587,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9AD03B49CC18EC067228CF3D /* [CP] Embed Pods Frameworks */ = {
+		9F57D2DB153417CF1B85A1CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC53B9FACA02ED713C16CACE /* [CP] Check Pods Manifest.lock */ = {
