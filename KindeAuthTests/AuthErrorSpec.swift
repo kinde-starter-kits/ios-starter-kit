@@ -3,7 +3,7 @@ import Nimble
 import KindeSDK
 
 class AuthErrorSpec: QuickSpec {
-    override func spec() {
+    override class func spec() {
         describe("AuthError") {
 
             it("can parse a configuration auth error") {

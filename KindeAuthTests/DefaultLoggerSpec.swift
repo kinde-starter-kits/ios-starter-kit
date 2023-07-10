@@ -23,7 +23,7 @@ class MockLogger: LoggerProtocol {
 }
 
 class DefaultLoggerSpec: QuickSpec {
-    override func spec() {
+    override class func spec() {
         describe("DefaultLogger") {
 
             it("can successfully receive debug message") {

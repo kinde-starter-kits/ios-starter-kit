@@ -3,7 +3,7 @@ import Nimble
 import KindeSDK
 
 class StringJWTTokenDecodeSpec: QuickSpec {
-    override func spec() {
+    override class func spec() {
         describe("Config") {
 
             it("can parse a valid jwt token") {

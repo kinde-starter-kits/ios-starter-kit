@@ -6,10 +6,8 @@ import AppAuth
 import KindeAuth
 
 class AuthSpec: QuickSpec {
-    override func spec() {
-        
+    override class func spec() {
         describe("Auth") {
-            
             it("is unauthorised after initialisation") {
                 KindeSDKAPI.configure()
                 expect(KindeSDKAPI.auth.isAuthorized()) == false
@@ -19,7 +17,7 @@ class AuthSpec: QuickSpec {
                 let auth: Auth = KindeSDKAPI.auth
                 guard auth.isAuthorized() == true else { return }
                 let userDetails: User? = auth.getUserDetails()
-                expect(userDetails?.id?.count).to(beGreaterThan(0))
+                expect(userDetails?.id.count).to(beGreaterThan(0))
                 
                 let audClaim = auth.getClaim(key: "aud")
                 expect(audClaim).notTo(beNil())

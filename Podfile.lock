@@ -1,19 +1,19 @@
 PODS:
-  - AppAuth (1.6.0):
-    - AppAuth/Core (= 1.6.0)
-    - AppAuth/ExternalUserAgent (= 1.6.0)
-  - AppAuth/Core (1.6.0)
-  - AppAuth/ExternalUserAgent (1.6.0):
+  - AppAuth (1.6.2):
+    - AppAuth/Core (= 1.6.2)
+    - AppAuth/ExternalUserAgent (= 1.6.2)
+  - AppAuth/Core (1.6.2)
+  - AppAuth/ExternalUserAgent (1.6.2):
     - AppAuth/Core
-  - KindeSDK (1.1):
+  - KindeSDK (1.1.0):
     - AppAuth
   - MockingbirdFramework (0.20.0)
-  - Nimble (11.2.1)
-  - Quick (6.1.0)
+  - Nimble (12.0.1)
+  - Quick (7.1.0)
   - SwiftLint (0.50.3)
 
 DEPENDENCIES:
-  - KindeSDK (from `https://github.com/tanzilya/kinde-sdk-ios.git`, branch `feature/api_v2`)
+  - KindeSDK (from `https://github.com/kinde-oss/kinde-sdk-ios.git`)
   - MockingbirdFramework
   - Nimble
   - Quick
@@ -29,22 +29,21 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   KindeSDK:
-    :branch: feature/api_v2
-    :git: https://github.com/tanzilya/kinde-sdk-ios.git
+    :git: https://github.com/kinde-oss/kinde-sdk-ios.git
 
 CHECKOUT OPTIONS:
   KindeSDK:
-    :commit: 8f9562f1625977db09ad3493f3e969bce8358694
-    :git: https://github.com/tanzilya/kinde-sdk-ios.git
+    :commit: 99929699d9f1ca3333c67005e872f0917394ee28
+    :git: https://github.com/kinde-oss/kinde-sdk-ios.git
 
 SPEC CHECKSUMS:
-  AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
-  KindeSDK: ba02a4e58647e69184cbb5cb8cdde1cf49fbd688
+  AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
+  KindeSDK: 6d9153997ab0b2adfc34ba88c1e98fda3f4f5b13
   MockingbirdFramework: 54e35fbbb47b806c1a1fae2cf3ef99f6eceb55e5
-  Nimble: 516ac503a0fafaa8e41dbb4a70a61be421fa893a
-  Quick: 6676ffb409bf04abba2ff23902af2407bfc6ac90
+  Nimble: b279b3ca9e094508778aab5c76417be158d3ad04
+  Quick: bfee1bc96e9cdc4aeb89ecd5997aee7f4b394956
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: 9ad307917e3138dfe65af2a2d2d17b058a69df47
+PODFILE CHECKSUM: 10d80dcad20170a2834aeb3ce8b3f17cc179e610
 
 COCOAPODS: 1.11.3

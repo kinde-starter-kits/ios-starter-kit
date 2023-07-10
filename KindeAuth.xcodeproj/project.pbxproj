@@ -301,7 +301,7 @@
 				05CA7FD3288A3ED0008FFDD1 /* Resources */,
 				0570EA68289CB98700EEA16C /* ShellScript */,
 				3BAAF3BD29DAC9620099B9EB /* Embed Frameworks */,
-				22B5921D8A6B228D0A96E931 /* [CP] Embed Pods Frameworks */,
+				7E353A1DF1F7D7A34BDEF4C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,7 +321,7 @@
 				05D239F8286553160086FCBE /* Frameworks */,
 				05D239F9286553160086FCBE /* Resources */,
 				05D32B56286AC70B00F54AFB /* ShellScript */,
-				9F57D2DB153417CF1B85A1CD /* [CP] Embed Pods Frameworks */,
+				ABD81BFE2360DEB695EBBDE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,7 +340,7 @@
 				05D23A072865531A0086FCBE /* Sources */,
 				05D23A082865531A0086FCBE /* Frameworks */,
 				05D23A092865531A0086FCBE /* Resources */,
-				999F74E644B4C4E05F513C41 /* [CP] Embed Pods Frameworks */,
+				6B57A61D70789AFB901EF015 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,7 +360,7 @@
 				05D23A112865531A0086FCBE /* Sources */,
 				05D23A122865531A0086FCBE /* Frameworks */,
 				05D23A132865531A0086FCBE /* Resources */,
-				16B7DA6930840436A5C58767 /* [CP] Embed Pods Frameworks */,
+				D0E1A32B8FC41FB695886902 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -492,40 +492,6 @@
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
-		16B7DA6930840436A5C58767 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		22B5921D8A6B228D0A96E931 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4782CB41B3D39A5836BD1B79 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,6 +512,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B57A61D70789AFB901EF015 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		75F6B2B6DFDE2211E60DEF89 /* [CP] Check Pods Manifest.lock */ = {
@@ -570,24 +553,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		999F74E644B4C4E05F513C41 /* [CP] Embed Pods Frameworks */ = {
+		7E353A1DF1F7D7A34BDEF4C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9F57D2DB153417CF1B85A1CD /* [CP] Embed Pods Frameworks */ = {
+		ABD81BFE2360DEB695EBBDE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -624,6 +607,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E1A32B8FC41FB695886902 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F72EC66722189DD49597B38D /* [CP] Check Pods Manifest.lock */ = {
