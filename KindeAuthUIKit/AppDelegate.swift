@@ -7,7 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         // The Kinde authentication service must be configured before use
-        Auth.configure(logger: Logger())
+        KindeSDKAPI.configure(Logger())
 
         return true
     }

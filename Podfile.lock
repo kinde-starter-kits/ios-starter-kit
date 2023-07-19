@@ -1,37 +1,41 @@
 PODS:
-  - AnyCodable-FlightSchool (0.6.7)
-  - AppAuth (1.6.0):
-    - AppAuth/Core (= 1.6.0)
-    - AppAuth/ExternalUserAgent (= 1.6.0)
-  - AppAuth/Core (1.6.0)
-  - AppAuth/ExternalUserAgent (1.6.0):
+  - AppAuth (1.6.2):
+    - AppAuth/Core (= 1.6.2)
+    - AppAuth/ExternalUserAgent (= 1.6.2)
+  - AppAuth/Core (1.6.2)
+  - AppAuth/ExternalUserAgent (1.6.2):
     - AppAuth/Core
-  - KindeSDK (0.1.1):
-    - AnyCodable-FlightSchool (~> 0.6.1)
-    - AppAuth
-    - SwiftKeychainWrapper
-  - SwiftKeychainWrapper (4.0.1)
+  - KindeSDK (1.1.0):
+    - AppAuth (>= 1.6.2)
+  - MockingbirdFramework (0.20.0)
+  - Nimble (12.0.1)
+  - Quick (7.1.0)
   - SwiftLint (0.50.3)
 
 DEPENDENCIES:
-  - KindeSDK
-  - SwiftLint
+  - KindeSDK (= 1.1.0)
+  - MockingbirdFramework
+  - Nimble
+  - Quick
+  - SwiftLint (~> 0.50.3)
 
 SPEC REPOS:
   trunk:
-    - AnyCodable-FlightSchool
     - AppAuth
     - KindeSDK
-    - SwiftKeychainWrapper
+    - MockingbirdFramework
+    - Nimble
+    - Quick
     - SwiftLint
 
 SPEC CHECKSUMS:
-  AnyCodable-FlightSchool: 261cbe76757802b17d471b9059b21e6fa5edf57b
-  AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
-  KindeSDK: 6e764da5500c3f16a04d596bdbdebcd4d35c92ad
-  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
+  KindeSDK: 6375f61996cbfbebd51098047e39dd33f06696fa
+  MockingbirdFramework: 54e35fbbb47b806c1a1fae2cf3ef99f6eceb55e5
+  Nimble: b279b3ca9e094508778aab5c76417be158d3ad04
+  Quick: bfee1bc96e9cdc4aeb89ecd5997aee7f4b394956
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: c2c3d31428182dceafb8c1d8c60c1b784f92ddda
+PODFILE CHECKSUM: ccb136be1dfb15e299b8d7436e30e13f06c13ca4
 
 COCOAPODS: 1.11.3

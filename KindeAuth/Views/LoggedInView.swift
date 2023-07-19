@@ -20,13 +20,13 @@ struct LoggedInView: View {
             HStack {
                 Text("KindeAuth").font(.title)
                 Spacer()
-                Text("\(self.user?.firstName?.first?.uppercased() ?? "")\(self.user?.firstName?[1]?.uppercased() ?? "")").font(.title3).overlay(
+                Text("\(self.user?.givenName?.first?.uppercased() ?? "")\(self.user?.givenName?[1]?.uppercased() ?? "")").font(.title3).overlay(
                     Circle()
                     .stroke(Color.black, lineWidth: 4)
                     .padding(-6)
                 ).padding(.trailing)
                 Button("Sign Out", action: {
-                    self.logout(viewController: self.getViewController())
+                    self.logout()
                 })
             }
         }
@@ -53,22 +53,23 @@ struct LoggedInView: View {
             )
         }
     }
-    
-    private func getViewController() -> UIViewController {
-        let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-        return (scene?.windows.first?.rootViewController)!
-    }
 }
 
 struct LoggedInView_Previews: PreviewProvider {
     static var previews: some View {
-        LoggedInView(user: .constant(UserProfile(id: "id", preferredEmail: "bob@example.com", lastName: "Dylan", firstName: "Bob")), logger: nil) {}
+        LoggedInView(user: .constant(UserProfile(id: "id",
+                                                 providedId: "providedId",
+                                                 name: "Bob",
+                                                 givenName: "Bob",
+                                                 familyName: "Dylan",
+                                                 updatedAt: 12345 )),
+                     logger: nil) {}
     }
 }
 
 extension LoggedInView {
-    func logout(viewController: UIViewController) {
-        Auth.logout(viewController: viewController) { result in
+    func logout() {
+        KindeSDKAPI.auth.logout { result in
             if result {
                 self.onLoggedOut()
             } else {

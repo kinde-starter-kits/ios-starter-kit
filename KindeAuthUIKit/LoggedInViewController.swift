@@ -6,23 +6,27 @@ class LoggedInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        OAuthAPI.getUser { (userProfile, error) in
-            if let userProfile = userProfile {
-                let userName = "\(userProfile.firstName ?? "") \(userProfile.lastName ?? "")"
-                print("Got profile for user \(userName)")
-                let userLabel = "\(userProfile.firstName?.first?.uppercased() ?? "")\(userProfile.firstName?[1]?.uppercased() ?? "")"
-                
-                self.userLabel.text = userLabel
-            }
-            if let error = error {
-                alert(message: "Failed to get user profile: \(error.localizedDescription)", viewController: self)
-            }
+        Task {
+            await asyncGetUserProfile()
+        }
+    }
+    
+    private func asyncGetUserProfile() async -> Bool {
+        do {
+            let userProfile = try await OAuthAPI.getUser()
+            let userName = "\(userProfile.givenName ?? "") \(userProfile.familyName ?? "")"
+            print("Got profile for user \(userName)")
+            let userLabel = "\(userProfile.givenName?.first?.uppercased() ?? "")\(userProfile.givenName?[1]?.uppercased() ?? "")"
+            self.userLabel.text = userLabel
+            return true
+        } catch {
+            alert(message: "Failed to get user profile: \(error.localizedDescription)", viewController: self)
+            return false
         }
     }
     
     @IBAction func signOut(_ sender: Any) {
-        Auth.logout(viewController: self) { result in
+        KindeSDKAPI.auth.logout { result in
             if result {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let loggedOutViewController = storyboard.instantiateViewController(identifier: "logged_out_vc")

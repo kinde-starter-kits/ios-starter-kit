@@ -1,7 +1,0 @@
-{
-  "issuer": "https://{your-business}.kinde.com",
-  "clientId": "{your-client-id}",
-  "redirectUri": "{your-url-scheme}://kinde_callback",
-  "postLogoutRedirectUri": "{your-url-scheme}://kinde_logoutcallback",
-  "scope": "offline openid email profile"
-}

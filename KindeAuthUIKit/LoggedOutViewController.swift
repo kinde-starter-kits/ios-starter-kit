@@ -2,12 +2,13 @@ import UIKit
 import KindeSDK
 
 class ViewController: UIViewController {
+    private let auth: Auth = KindeSDKAPI.auth
     
     @IBAction func signIn(_ sender: Any) {
-        Auth.login(viewController: self) { result in
+        auth.login { result in
             switch result {
             case let .failure(error):
-                if !Auth.isUserCancellationErrorCode(error) {
+                if !self.auth.isUserCancellationErrorCode(error) {
                     alert(message: "Login failed: \(error.localizedDescription)", viewController: self)
                 }
             case .success:
@@ -17,10 +18,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
-        Auth.register(viewController: self) { result in
+        auth.register { result in
             switch result {
             case let .failure(error):
-                if !Auth.isUserCancellationErrorCode(error) {
+                if !self.auth.isUserCancellationErrorCode(error) {
                     alert(message: "Registration failed: \(error.localizedDescription)", viewController: self)
                 }
             case .success:

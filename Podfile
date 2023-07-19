@@ -1,15 +1,17 @@
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'KindeAuth' do
   use_frameworks!
 
   # Pods for KindeAuth
-  pod 'SwiftLint'
-  pod 'KindeSDK'
+  pod 'SwiftLint', '~> 0.50.3'
+  pod 'KindeSDK', '1.1.0'
 
   target 'KindeAuthTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'MockingbirdFramework'
   end
 
   target 'KindeAuthUITests' do
@@ -22,7 +24,17 @@ target 'KindeAuthUIKit' do
   use_frameworks!
 
   # Pods for KindeAuth
-  pod 'SwiftLint'
-  pod 'KindeSDK'
+  pod 'SwiftLint', '~> 0.50.3'
+  pod 'KindeSDK', '1.1.0'
 
+end
+
+post_install do |installer|
+    installer.generated_projects.each do |project|
+          project.targets.each do |target|
+              target.build_configurations.each do |config|
+                  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+               end
+          end
+   end
 end

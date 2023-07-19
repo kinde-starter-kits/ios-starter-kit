@@ -2,6 +2,7 @@ import UIKit
 
 /// Present an error alert with the given message and print it to the console
 func alert(message: String, viewController: UIViewController) {
+    
     let defaultAction = UIAlertAction(title: "OK",
                             style: .default)
     
@@ -11,5 +12,7 @@ func alert(message: String, viewController: UIViewController) {
     alert.addAction(defaultAction)
     
     print(message)
-    viewController.present(alert, animated: true)
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        viewController.present(alert, animated: true)
+    }
 }

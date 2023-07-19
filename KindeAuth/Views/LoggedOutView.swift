@@ -7,6 +7,7 @@ struct LoggedOutView: View {
     
     private let logger: Logger?
     private let onLoggedIn: () -> Void
+    private let auth: Auth = KindeSDKAPI.auth
 
     init(logger: Logger?, onLoggedIn: @escaping () -> Void) {
         self.logger = logger
@@ -15,43 +16,41 @@ struct LoggedOutView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("KindeAuth").font(.title)
-                Spacer()
-                Button("Sign In", action: {
-                    self.login(viewController: self.getViewController())
-                })
-                Button("Sign Up", action: {
-                    self.register(viewController: self.getViewController())
-                })
+            VStack {
+                HStack {
+                    Text("KindeAuth").font(.title)
+                    Spacer()
+                    Button("Sign In", action: {
+                        self.login()
+                    })
+                    Button("Sign Up", action: {
+                        self.register()
+                    })
+                }
             }
-        }
-        .padding(.bottom)
-        VStack {
-            Spacer()
-            Text("Let’s start authenticating with KindeAuth").font(.largeTitle).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
-            Text("Configure your app").font(.title3).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
-            Link("Go to docs", destination: URL(string: "https://kinde.com/docs/sdks/swift-sdk")!)
-            Spacer()
-        }
-        .frame(maxWidth: .infinity)
-        .background(.black)
-        .cornerRadius(20)
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(.black, lineWidth: 5)
-        )
-        .alert(isPresented: $presentAlert) {
-            Alert(
-                title: Text("Error"),
-                message: Text(alertMessage)
+            .padding(.bottom)
+            VStack {
+                Spacer()
+                Text("Let’s start authenticating with KindeAuth").font(.largeTitle).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
+                Text("Configure your app").font(.title3).multilineTextAlignment(.center).foregroundColor(Color.white).padding()
+                Link("Go to docs", destination: URL(string: "https://kinde.com/docs/sdks/swift-sdk")!)
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
+            .background(.black)
+            .cornerRadius(20)
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(.black, lineWidth: 5)
             )
         }
-    }
-    
-    private func getViewController() -> UIViewController {
-        let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-        return (scene?.windows.first?.rootViewController)!
+        .alert(Text("Error"), isPresented: $presentAlert) {
+            Button("OK") {
+                presentAlert = false
+            }
+        } message: {
+            Text(alertMessage)
+        }
     }
 }
 
@@ -62,14 +61,16 @@ struct LoggedOutView_Previews: PreviewProvider {
 }
 
 extension LoggedOutView {
-    func register(viewController: UIViewController) {
-        Auth.register(viewController: viewController) { result in
+    func register() {
+        auth.register { result in
             switch result {
             case let .failure(error):
-                if !Auth.isUserCancellationErrorCode(error) {
+                if !auth.isUserCancellationErrorCode(error) {
                     alertMessage = "Registration failed: \(error.localizedDescription)"
                     self.logger?.error(message: alertMessage)
-                    presentAlert = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        presentAlert = true
+                    }
                 }
             case .success:
                 self.onLoggedIn()
@@ -77,14 +78,16 @@ extension LoggedOutView {
         }
     }
     
-    func login(viewController: UIViewController) {
-        Auth.login(viewController: viewController) { result in
+    func login() {
+        auth.login { result in
             switch result {
             case let .failure(error):
-                if !Auth.isUserCancellationErrorCode(error) {
+                if !auth.isUserCancellationErrorCode(error) {
                     alertMessage = "Login failed: \(error.localizedDescription)"
                     self.logger?.error(message: alertMessage)
-                    presentAlert = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        presentAlert = true
+                    }
                 }
             case .success:
                 self.onLoggedIn()
