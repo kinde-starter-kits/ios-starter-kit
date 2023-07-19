@@ -6,14 +6,14 @@ PODS:
   - AppAuth/ExternalUserAgent (1.6.2):
     - AppAuth/Core
   - KindeSDK (1.1.0):
-    - AppAuth
+    - AppAuth (>= 1.6.2)
   - MockingbirdFramework (0.20.0)
   - Nimble (12.0.1)
   - Quick (7.1.0)
   - SwiftLint (0.50.3)
 
 DEPENDENCIES:
-  - KindeSDK (from `https://github.com/kinde-oss/kinde-sdk-ios.git`)
+  - KindeSDK (= 1.1.0)
   - MockingbirdFramework
   - Nimble
   - Quick
@@ -22,28 +22,20 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AppAuth
+    - KindeSDK
     - MockingbirdFramework
     - Nimble
     - Quick
     - SwiftLint
 
-EXTERNAL SOURCES:
-  KindeSDK:
-    :git: https://github.com/kinde-oss/kinde-sdk-ios.git
-
-CHECKOUT OPTIONS:
-  KindeSDK:
-    :commit: 99929699d9f1ca3333c67005e872f0917394ee28
-    :git: https://github.com/kinde-oss/kinde-sdk-ios.git
-
 SPEC CHECKSUMS:
   AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
-  KindeSDK: 6d9153997ab0b2adfc34ba88c1e98fda3f4f5b13
+  KindeSDK: 6375f61996cbfbebd51098047e39dd33f06696fa
   MockingbirdFramework: 54e35fbbb47b806c1a1fae2cf3ef99f6eceb55e5
   Nimble: b279b3ca9e094508778aab5c76417be158d3ad04
   Quick: bfee1bc96e9cdc4aeb89ecd5997aee7f4b394956
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: 10d80dcad20170a2834aeb3ce8b3f17cc179e610
+PODFILE CHECKSUM: ccb136be1dfb15e299b8d7436e30e13f06c13ca4
 
 COCOAPODS: 1.11.3
