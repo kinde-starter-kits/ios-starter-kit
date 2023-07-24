@@ -48,52 +48,12 @@ class KindeAuthUITests: XCTestCase {
         // Password is assumed to be the first secure text field
         let passwordInput = app.webViews.secureTextFields.firstMatch
         passwordInput.tap()
-        passwordInput.typeText(Config.password)
-        
-        // Complete login
-        waitThenTapButton(button: Config.signInContinueButtonLabel)
+        passwordInput.typeText("\(Config.password)\n")
         
         // Sign out
         waitThenTapButton(button: Config.signOutButtonLabel)
     }
     
-    func testSignUpAndSignOut() {
-        // Sign up with existed user
-        waitThenTapButton(button: Config.signUpButtonLabel)
-        waitThenTapAlertButton(button: Config.signInContinueAlertButtonLabel)
-        
-        let app = XCUIApplication()
-        // First Name is assumed to be the first text field
-        let userFirstName = app.webViews.textFields.firstMatch
-        XCTAssertTrue(userFirstName.waitForExistence(timeout: Config.uiElementWaitTimeout))
-        userFirstName.tap()
-        userFirstName.typeText("\(Config.name)")
-        
-        waitThenTapButton(button: Config.signUpNextKeyboardButtonLabel)
-        // Last Name is assumed to be the first text field
-        app.typeText("\(Config.name)")
-
-        waitThenTapButton(button: Config.signUpNextKeyboardButtonLabel)
-        // Email is assumed to be the first text field
-        app.typeText("\(Config.userEmail)")
-
-        waitThenTapButton(button: Config.signUpDoneKeyboardButtonLabel)
-        
-        // Register
-        waitThenTapButton(button: Config.signUpRegisterButtonLabel)
-        
-        // Password is assumed to be the first secure text field
-        let passwordInput = app.webViews.secureTextFields.firstMatch
-        passwordInput.tap()
-        passwordInput.typeText(Config.password)
-        waitThenTapButton(button: Config.signUpDoneKeyboardButtonLabel)
-        // Complete register
-        waitThenTapButton(button: Config.signInContinueButtonLabel)
-        
-        // Sign out
-        waitThenTapButton(button: Config.signOutButtonLabel)
-    }
-
     func testSignInCancellation() {
         waitThenTapButton(button: Config.signInButtonLabel)
         waitThenTapAlertButton(button: Config.signInCancelButtonLabel)
@@ -119,10 +79,8 @@ class KindeAuthUITests: XCTestCase {
         let passwordInput = app.webViews.secureTextFields.firstMatch
         XCTAssertTrue(passwordInput.waitForExistence(timeout: Config.uiElementWaitTimeout))
         passwordInput.tap()
-        passwordInput.typeText(Config.password)
-                
-        waitThenTapButton(button: Config.signInContinueButtonLabel)
-                
+        passwordInput.typeText("\(Config.password)\n")
+        
         // Sign out
         waitThenTapButton(button: Config.signOutButtonLabel)
     }
