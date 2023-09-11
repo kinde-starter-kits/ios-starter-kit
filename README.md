@@ -28,7 +28,7 @@ Then find this configuration block in the `kinde-auth.json` file:
   "clientId": "<your_kinde_client_id>",
   "redirectUri": "<your_url_scheme>://kinde_callback",
   "postLogoutRedirectUri": "<your_url_scheme>://kinde_logoutcallback",
-  "scope": "offline openid email profile",
+  "scope": "offline openid email profile"
 }
 ```
 
