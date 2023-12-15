@@ -5,7 +5,7 @@ target 'KindeAuth' do
 
   # Pods for KindeAuth
   pod 'SwiftLint', '~> 0.50.3'
-  pod 'KindeSDK', '1.1.0'
+  pod 'KindeSDK', :git => 'https://github.com/mafhaam/kinde-sdk-ios', :branch => 'feature/1.2'
 
   target 'KindeAuthTests' do
     inherit! :search_paths
@@ -25,8 +25,7 @@ target 'KindeAuthUIKit' do
 
   # Pods for KindeAuth
   pod 'SwiftLint', '~> 0.50.3'
-  pod 'KindeSDK', '1.1.0'
-
+  pod 'KindeSDK', :git => 'https://github.com/mafhaam/kinde-sdk-ios', :branch => 'feature/1.2'
 end
 
 post_install do |installer|
