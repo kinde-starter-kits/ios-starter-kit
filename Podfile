@@ -14,10 +14,6 @@ target 'KindeAuth' do
     pod 'MockingbirdFramework'
   end
 
-  target 'KindeAuthUITests' do
-    # Pods for testing
-  end
-
 end
 
 target 'KindeAuthUIKit' do
