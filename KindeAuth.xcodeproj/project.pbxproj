@@ -24,8 +24,6 @@
 		05D239FF286553160086FCBE /* KindeAuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D239FE286553160086FCBE /* KindeAuthApp.swift */; };
 		05D23A032865531A0086FCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D23A022865531A0086FCBE /* Assets.xcassets */; };
 		05D23A062865531A0086FCBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D23A052865531A0086FCBE /* Preview Assets.xcassets */; };
-		05D23A1A2865531A0086FCBE /* KindeAuthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D23A192865531A0086FCBE /* KindeAuthUITests.swift */; };
-		05D23A1C2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D23A1B2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift */; };
 		0DB6C017989EB18FD80A323C /* Pods_KindeAuthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281B80B79A1C7FC86C6B4A40 /* Pods_KindeAuthTests.framework */; };
 		24BD9608A02B6DA73EDBC3E5 /* Pods_KindeAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4512C06716A09E595E238C /* Pods_KindeAuth.framework */; };
 		3B1B846729E5FF4B005DEF54 /* kinde-auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B1B846629E5FF4B005DEF54 /* kinde-auth.json */; };
@@ -37,19 +35,11 @@
 		3BAAF3C729DB31850099B9EB /* StringJWTTokenDecodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAF3C629DB31850099B9EB /* StringJWTTokenDecodeSpec.swift */; };
 		3BAB04DA29B78042008714AC /* ConfigSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB04D729B78042008714AC /* ConfigSpec.swift */; };
 		3BAB04DC29B78042008714AC /* AuthSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB04D929B78042008714AC /* AuthSpec.swift */; };
-		673D7A90DCB883343C3DF00F /* Pods_KindeAuth_KindeAuthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389DB511EEB3E4AB88CE5AD6 /* Pods_KindeAuth_KindeAuthUITests.framework */; };
 		F3C74695D1FAC0A81721B01D /* Pods_KindeAuthUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43A47FC5F623709FCD0C7EE /* Pods_KindeAuthUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		05D23A0C2865531A0086FCBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05D239F3286553160086FCBE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 05D239FA286553160086FCBE;
-			remoteInfo = KindeAuth;
-		};
-		05D23A162865531A0086FCBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05D239F3286553160086FCBE /* Project object */;
 			proxyType = 1;
@@ -95,9 +85,6 @@
 		05D23A022865531A0086FCBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05D23A052865531A0086FCBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05D23A0B2865531A0086FCBE /* KindeAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindeAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		05D23A152865531A0086FCBE /* KindeAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindeAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		05D23A192865531A0086FCBE /* KindeAuthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindeAuthUITests.swift; sourceTree = "<group>"; };
-		05D23A1B2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindeAuthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		281B80B79A1C7FC86C6B4A40 /* Pods_KindeAuthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KindeAuthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C02DB0AE09B112E08336057 /* Pods-KindeAuthUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuthUIKit.debug.xcconfig"; path = "Target Support Files/Pods-KindeAuthUIKit/Pods-KindeAuthUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		2DFDEF290BE907AC6E5B7FD6 /* Pods-KindeAuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KindeAuthTests.debug.xcconfig"; path = "Target Support Files/Pods-KindeAuthTests/Pods-KindeAuthTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,14 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DB6C017989EB18FD80A323C /* Pods_KindeAuthTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05D23A122865531A0086FCBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				673D7A90DCB883343C3DF00F /* Pods_KindeAuth_KindeAuthUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +179,6 @@
 				05AA580528E69FFA0071EB5A /* README.md */,
 				05D239FD286553160086FCBE /* KindeAuth */,
 				05D23A0E2865531A0086FCBE /* KindeAuthTests */,
-				05D23A182865531A0086FCBE /* KindeAuthUITests */,
 				05CA7FD6288A3ED0008FFDD1 /* KindeAuthUIKit */,
 				05D239FC286553160086FCBE /* Products */,
 				21F872B49293BD7A07DB85DA /* Pods */,
@@ -213,7 +191,6 @@
 			children = (
 				05D239FB286553160086FCBE /* KindeAuth.app */,
 				05D23A0B2865531A0086FCBE /* KindeAuthTests.xctest */,
-				05D23A152865531A0086FCBE /* KindeAuthUITests.xctest */,
 				05CA7FD5288A3ED0008FFDD1 /* KindeAuthUIKit.app */,
 			);
 			name = Products;
@@ -249,15 +226,6 @@
 				3BAAF3C629DB31850099B9EB /* StringJWTTokenDecodeSpec.swift */,
 			);
 			path = KindeAuthTests;
-			sourceTree = "<group>";
-		};
-		05D23A182865531A0086FCBE /* KindeAuthUITests */ = {
-			isa = PBXGroup;
-			children = (
-				05D23A192865531A0086FCBE /* KindeAuthUITests.swift */,
-				05D23A1B2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift */,
-			);
-			path = KindeAuthUITests;
 			sourceTree = "<group>";
 		};
 		21F872B49293BD7A07DB85DA /* Pods */ = {
@@ -352,26 +320,6 @@
 			productReference = 05D23A0B2865531A0086FCBE /* KindeAuthTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		05D23A142865531A0086FCBE /* KindeAuthUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 05D23A252865531A0086FCBE /* Build configuration list for PBXNativeTarget "KindeAuthUITests" */;
-			buildPhases = (
-				4782CB41B3D39A5836BD1B79 /* [CP] Check Pods Manifest.lock */,
-				05D23A112865531A0086FCBE /* Sources */,
-				05D23A122865531A0086FCBE /* Frameworks */,
-				05D23A132865531A0086FCBE /* Resources */,
-				39E7CE16D6BBC34587EF5C52 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				05D23A172865531A0086FCBE /* PBXTargetDependency */,
-			);
-			name = KindeAuthUITests;
-			productName = KindeAuthUITests;
-			productReference = 05D23A152865531A0086FCBE /* KindeAuthUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -392,10 +340,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 05D239FA286553160086FCBE;
 					};
-					05D23A142865531A0086FCBE = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 05D239FA286553160086FCBE;
-					};
 				};
 			};
 			buildConfigurationList = 05D239F6286553160086FCBE /* Build configuration list for PBXProject "KindeAuth" */;
@@ -413,7 +357,6 @@
 			targets = (
 				05D239FA286553160086FCBE /* KindeAuth */,
 				05D23A0A2865531A0086FCBE /* KindeAuthTests */,
-				05D23A142865531A0086FCBE /* KindeAuthUITests */,
 				05CA7FD4288A3ED0008FFDD1 /* KindeAuthUIKit */,
 			);
 		};
@@ -442,13 +385,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		05D23A092865531A0086FCBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05D23A132865531A0086FCBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -492,23 +428,6 @@
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
-		39E7CE16D6BBC34587EF5C52 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth-KindeAuthUITests/Pods-KindeAuth-KindeAuthUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3C690BF1609212B023926700 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -524,28 +443,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KindeAuth/Pods-KindeAuth-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4782CB41B3D39A5836BD1B79 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KindeAuth-KindeAuthUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		66CEB919384EF3DF55D7D98B /* [CP] Embed Pods Frameworks */ = {
@@ -691,15 +588,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		05D23A112865531A0086FCBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05D23A1C2865531A0086FCBE /* KindeAuthUITestsLaunchTests.swift in Sources */,
-				05D23A1A2865531A0086FCBE /* KindeAuthUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -707,11 +595,6 @@
 			isa = PBXTargetDependency;
 			target = 05D239FA286553160086FCBE /* KindeAuth */;
 			targetProxy = 05D23A0C2865531A0086FCBE /* PBXContainerItemProxy */;
-		};
-		05D23A172865531A0086FCBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 05D239FA286553160086FCBE /* KindeAuth */;
-			targetProxy = 05D23A162865531A0086FCBE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -759,6 +642,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -789,6 +675,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -852,7 +741,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -906,7 +795,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -939,8 +828,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -973,8 +865,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -992,6 +887,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1012,46 +910,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KindeAuth.app/KindeAuth";
-			};
-			name = Release;
-		};
-		05D23A262865531A0086FCBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F18A61F1E9512982AE806707 /* Pods-KindeAuth-KindeAuthUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KindeAuth;
-			};
-			name = Debug;
-		};
-		05D23A272865531A0086FCBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7A0D4F50608205D7F6269F8 /* Pods-KindeAuth-KindeAuthUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinde.KindeAuthUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KindeAuth;
 			};
 			name = Release;
 		};
@@ -1090,15 +955,6 @@
 			buildConfigurations = (
 				05D23A232865531A0086FCBE /* Debug */,
 				05D23A242865531A0086FCBE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		05D23A252865531A0086FCBE /* Build configuration list for PBXNativeTarget "KindeAuthUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05D23A262865531A0086FCBE /* Debug */,
-				05D23A272865531A0086FCBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

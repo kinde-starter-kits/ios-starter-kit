@@ -5,17 +5,13 @@ target 'KindeAuth' do
 
   # Pods for KindeAuth
   pod 'SwiftLint', '~> 0.50.3'
-  pod 'KindeSDK', '1.1.0'
+  pod 'KindeSDK'
 
   target 'KindeAuthTests' do
     inherit! :search_paths
     pod 'Quick'
     pod 'Nimble'
     pod 'MockingbirdFramework'
-  end
-
-  target 'KindeAuthUITests' do
-    # Pods for testing
   end
 
 end
@@ -25,8 +21,7 @@ target 'KindeAuthUIKit' do
 
   # Pods for KindeAuth
   pod 'SwiftLint', '~> 0.50.3'
-  pod 'KindeSDK', '1.1.0'
-
+  pod 'KindeSDK'
 end
 
 post_install do |installer|
