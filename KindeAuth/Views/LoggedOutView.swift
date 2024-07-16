@@ -4,7 +4,8 @@ import KindeSDK
 struct LoggedOutView: View {
     @State private var presentAlert = false
     @State private var alertMessage = ""
-    
+    private let hintEmail = "test@test.com"
+
     private let logger: Logger?
     private let onLoggedIn: () -> Void
     private let auth: Auth = KindeSDKAPI.auth
@@ -62,7 +63,7 @@ struct LoggedOutView_Previews: PreviewProvider {
 
 extension LoggedOutView {
     func register() {
-        auth.register { result in
+        auth.register(loginHint: hintEmail) { result in
             switch result {
             case let .failure(error):
                 if !auth.isUserCancellationErrorCode(error) {
@@ -79,7 +80,7 @@ extension LoggedOutView {
     }
     
     func login() {
-        auth.login { result in
+        auth.login(loginHint: hintEmail) { result in
             switch result {
             case let .failure(error):
                 if !auth.isUserCancellationErrorCode(error) {
