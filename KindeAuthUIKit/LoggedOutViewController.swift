@@ -6,6 +6,7 @@ class ViewController: UIViewController {
     private let hintEmail = "test@test.com"
 
     @IBAction func signIn(_ sender: Any) {
+        auth.enablePrivateAuthSession(true)
         auth.login(loginHint: hintEmail) { result in
             switch result {
             case let .failure(error):
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
+        auth.enablePrivateAuthSession(true)
         auth.register(loginHint: hintEmail) { result in
             switch result {
             case let .failure(error):

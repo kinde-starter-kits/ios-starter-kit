@@ -63,6 +63,7 @@ struct LoggedOutView_Previews: PreviewProvider {
 
 extension LoggedOutView {
     func register() {
+        auth.enablePrivateAuthSession(true)
         auth.register(loginHint: hintEmail) { result in
             switch result {
             case let .failure(error):
@@ -80,6 +81,7 @@ extension LoggedOutView {
     }
     
     func login() {
+        auth.enablePrivateAuthSession(true)
         auth.login(loginHint: hintEmail) { result in
             switch result {
             case let .failure(error):
