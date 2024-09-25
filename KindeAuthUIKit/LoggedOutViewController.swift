@@ -5,6 +5,7 @@ class ViewController: UIViewController {
     private let auth: Auth = KindeSDKAPI.auth
     
     @IBAction func signIn(_ sender: Any) {
+        auth.enablePrivateAuthSession(true)
         auth.login { result in
             switch result {
             case let .failure(error):
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
+        auth.enablePrivateAuthSession(true)
         auth.register { result in
             switch result {
             case let .failure(error):
