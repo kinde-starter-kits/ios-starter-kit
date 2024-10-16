@@ -32,7 +32,7 @@ Then find this configuration block in the `kinde-auth.json` file:
 }
 ```
 
-In the configuration block above replace the following placeholders with values from your Kinde [App Keys](https://kinde.com/docs/the-basics/getting-app-keys) page:
+In the configuration block above replace the following placeholders with values from your Kinde [App Keys](https://docs.kinde.com/get-started/connect/getting-app-keys/) page:
 
 - `https://<your_kinde_subdomain>.kinde.com` with the `Token host` value
 - `<your_kinde_client_id` with the `Client ID` value.
