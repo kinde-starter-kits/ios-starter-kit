@@ -1,2 +1,9 @@
 * @kinde-starter-kits/giants-kinde
-
+Podfile @kinde-starter-kits/sdk-engineers
+**/Podfile @kinde-starter-kits/sdk-engineers
+Podfile.lock @kinde-starter-kits/sdk-engineers
+**/Podfile.lock @kinde-starter-kits/sdk-engineers
+Package.swift @kinde-starter-kits/sdk-engineers
+**/Package.swift @kinde-starter-kits/sdk-engineers
+Package.resolved @kinde-starter-kits/sdk-engineers
+**/Package.resolved @kinde-starter-kits/sdk-engineers
